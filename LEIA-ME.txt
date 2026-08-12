@@ -1,11 +1,48 @@
-VERSÃO FINAL — LZ / MSMV
+LZ — SITE OFICIAL / VERSÃO COMPLETA 2026
 
-Esta versão mantém o projeto completo e adiciona os dois flyers enviados:
-- msmv-capa.jpg = capa oficial do álbum
-- msmv-tracklist.jpg = flyer oficial da lista de músicas
+Conteúdo incorporado:
+- Apresentação do Lz em uma das primeiras seções.
+- Álbum MSMV com 23 faixas, todas com o mesmo peso visual.
+- Flyers oficiais do MSMV.
+- Capinhas ao lado das faixas quando havia capa correspondente na pasta:
+  Alter Ego, Camisa de Time, Mina Gata e Sonho Ingrato.
+- Logos das seis batalhas.
+- Vídeos de "Melhores rimas" dentro da batalha correspondente.
+- Fotos de títulos dentro da batalha correspondente.
+- Galeria com fotos antigas + novas fotos da pasta "Fotos do Lz em Batalhas".
+- Seção completa "Batalhas 2026" com mês, data e resultado.
+- Destaque +7.000 pessoas / abertura do show do Djonga.
+- Instagram @Lzzinnzx__
+- E-mail Lz.contato00@gmail.com
+- Layout responsivo para PC e celular, menu mobile e galeria ampliável.
+- robots.txt, sitemap.xml e favicon.
 
-A seção de músicas mostra os dois flyers e, abaixo, a lista interativa com as 23 faixas.
-O flyer original contém 22 faixas; a faixa 23, "Alter ego", foi incluída na lista final conforme informado pelo usuário.
+ESTATÍSTICAS DO ARQUIVO BATALHAS 2026:
+- 29 registros entre janeiro e julho.
+- 8 registros marcados como Campeão no arquivo.
 
-Também permanecem as fotos, batalhas, 15 folhinhas, show do Djonga (+7.000 pessoas), Instagram e e-mail.
-Abra index.html diretamente no navegador.
+COMO ATUALIZAR NO GITHUB:
+1. Extraia este ZIP.
+2. No repositório lzoficial/lzoficial.github.io, substitua os arquivos antigos pelos arquivos desta pasta.
+3. É essencial enviar a pasta "assets" inteira junto com index.html.
+4. Mantenha index.html na raiz do repositório.
+5. Aguarde o GitHub Pages publicar a alteração.
+
+IMPORTANTE SOBRE VÍDEOS:
+Os vídeos ficam em assets/battles/videos e são reproduzidos pelo próprio site.
+Não renomeie ou mova os arquivos sem atualizar o HTML.
+
+
+ATUALIZAÇÃO V2:
+- Vídeo "Batalha da SAB - Evento Consciência Negra" também adicionado à seção do show do Djonga.
+- Instagram agora usa o link direto enviado pelo Lz: @Lzzinnzx__
+- TikTok adicionado ao lado das redes/contato com o nome "Lz Emici".
+- Link direto do TikTok configurado.
+
+ATUALIZAÇÃO V3:
+- Removido do site público o texto interno sobre arquivos/pastas da galeria.
+
+ATUALIZAÇÃO V4:
+- Removidos do site público textos internos/editoriais sobre pastas, arquivos enviados, organização do material e construção do site.
+- Removida a observação técnica sobre o flyer antigo ter 22 faixas.
+- O conteúdo público agora fala somente sobre Lz, música, batalhas, trajetória e contato.

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lzoficial.github.io/sitemap.xml
