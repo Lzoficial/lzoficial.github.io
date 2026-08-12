@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sobre o Lz | Site Oficial</title>
+<meta name="description" content="Conheça Lz, MC e artista de Bragança Paulista: trajetória nas batalhas de rima, música, MSMV e presença de palco.">
+<meta name="theme-color" content="#080808">
+<link rel="canonical" href="https://lzoficial.github.io/sobre/">
+<meta property="og:site_name" content="Lz Oficial">
+<meta property="og:title" content="Sobre o Lz | Site Oficial">
+<meta property="og:description" content="Conheça Lz, MC e artista de Bragança Paulista: trajetória nas batalhas de rima, música, MSMV e presença de palco.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lzoficial.github.io/sobre/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+:root{--bg:#080808;--bg2:#0d0d0d;--fg:#f4f1ea;--muted:#9b978e;--line:#2a2a2a;--lime:#d9ff00;--gold:#b48b43}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
+img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inherit}
+.header{position:fixed;inset:0 0 auto 0;z-index:50;height:72px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(#080808f8,#08080890,transparent);backdrop-filter:blur(4px)}
+.brand{font:900 40px/1 Arial Black,Impact,sans-serif;letter-spacing:-4px}.brand b{color:var(--lime)}.desktop-nav{display:flex;gap:24px;align-items:center}.desktop-nav a{font-size:10px;letter-spacing:1.7px;text-transform:uppercase;color:#ccc}.desktop-nav a:hover{color:var(--lime)}
+.menu-btn{display:none;border:1px solid #555;background:#111;color:#fff;padding:10px 13px;cursor:pointer}.mobile-nav{display:none}
+.hero{min-height:100svh;position:relative;display:flex;align-items:flex-end;padding:0 8vw 9vh;background:#111 url("assets/photos/lz-principal.jpg") 68% center/cover no-repeat}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#080808 2%,rgba(8,8,8,.72) 45%,rgba(8,8,8,.15)),linear-gradient(0deg,#080808 0%,transparent 62%)}.hero-copy{position:relative;z-index:2;max-width:920px}.eyebrow,.label,.kicker{font-size:10px;letter-spacing:3px;font-weight:800;color:var(--lime);text-transform:uppercase}.hero h1,.display{font-family:Impact,"Arial Black",sans-serif;text-transform:uppercase;letter-spacing:-.04em}.hero h1{font-size:clamp(110px,25vw,350px);line-height:.72;margin:22px 0 36px}.hero-sub{font:clamp(28px,5vw,64px)/.9 Impact,"Arial Black",sans-serif;text-transform:uppercase;max-width:760px}.hero-desc{max-width:650px;color:#c4c0b8;line-height:1.65;font-size:17px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border:1px solid #555;text-transform:uppercase;font-size:10px;letter-spacing:1.5px;font-weight:800}.btn.primary{background:var(--lime);color:#000;border-color:var(--lime)}
+.section{padding:120px 8vw;border-top:1px solid var(--line)}.section.alt{background:var(--bg2)}.section-head{display:grid;grid-template-columns:1.35fr .65fr;gap:8vw;align-items:end;margin:34px 0 58px}.section h2{font:clamp(62px,9vw,138px)/.82 Impact,"Arial Black",sans-serif;text-transform:uppercase;letter-spacing:-.04em;margin:0}.section h2 em{font-style:normal;color:#666}.section-intro{color:var(--muted);line-height:1.7;max-width:560px}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:9vw;align-items:start}.about-lead{font-size:clamp(24px,3vw,39px);line-height:1.17;margin:0 0 28px;font-weight:700}.about-copy p{color:#aaa69d;line-height:1.8;margin:0 0 18px}.about-points{display:grid;gap:12px}.about-point{border:1px solid var(--line);background:#0b0b0b;padding:22px}.about-point b{display:block;font:28px Impact,"Arial Black",sans-serif;text-transform:uppercase;margin-bottom:8px}.about-point p{margin:0;color:#858179;line-height:1.55}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #444;margin-top:60px}.stat{padding:30px 20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.stat b{display:block;font:58px Impact,"Arial Black",sans-serif}.stat span{font-size:9px;letter-spacing:2px;color:#78746c;text-transform:uppercase}
+.flyer-grid{display:grid;grid-template-columns:.9fr 1.2fr;gap:30px;align-items:start;margin-bottom:72px}.flyer-card{margin:0;background:#0b0b0b;border:1px solid var(--line);padding:10px}.flyer-card img{width:100%;display:block}.flyer-card figcaption{font-size:9px;letter-spacing:2px;color:#777;padding:14px 6px 5px;text-transform:uppercase}
+.album-note{padding:18px 20px;border-left:3px solid var(--lime);background:#0d0d0d;color:#aaa;font-size:12px;line-height:1.65;margin-bottom:34px}.track-list{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}.track-card{display:grid;grid-template-columns:74px 1fr;gap:14px;align-items:center;background:#080808;padding:11px;min-height:96px}.track-media{width:74px;height:74px;background:#121212;overflow:hidden}.track-media img{width:100%;height:100%;object-fit:cover;display:block}.track-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font:27px Impact,"Arial Black",sans-serif;color:#454545;background:linear-gradient(135deg,#151515,#090909)}.track-meta span{display:block;color:#5e5b55;font-size:9px;letter-spacing:2px}.track-meta h3{margin:6px 0 0;font-size:15px}
+.battle-summary{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:72px}.battle-summary a{background:#0a0a0a;padding:25px 14px;min-height:140px}.battle-summary strong{display:block;font:52px Impact,"Arial Black",sans-serif}.battle-summary span{font-size:12px;line-height:1.4}.battle-summary small{display:block;margin-top:8px;color:#777;text-transform:uppercase;letter-spacing:1px}
+.battle-detail{border-top:1px solid #484848;padding:48px 0 70px}.battle-detail-head{display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;margin-bottom:35px}.battle-logo{width:120px;height:120px;background:#111;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden}.battle-logo img{width:100%;height:100%;object-fit:contain;padding:7px}.battle-logo-fallback{font:42px Impact,"Arial Black",sans-serif}.battle-detail-head h3{font:clamp(30px,5vw,64px) Impact,"Arial Black",sans-serif;text-transform:uppercase;margin:8px 0 0}.battle-content{display:grid;grid-template-columns:1.1fr .9fr;gap:45px}.battle-content>div>h4{font:25px Impact,"Arial Black",sans-serif;text-transform:uppercase;margin:0 0 20px}.video-grid{display:grid;gap:18px}.video-card{border:1px solid var(--line);background:#0b0b0b}.video-card video{width:100%;display:block;background:#000;max-height:480px}.video-card h4{font-size:13px;line-height:1.45;margin:0;padding:14px}.title-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.title-shot{margin:0;background:#0b0b0b;border:1px solid var(--line)}.title-shot img{width:100%;aspect-ratio:1/1.15;object-fit:cover;display:block}.title-shot figcaption{font-size:9px;color:#777;line-height:1.4;padding:10px}.empty{color:#777;font-size:12px}
+.year-stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:42px}.year-stat{border:1px solid #3a3a3a;padding:15px 18px}.year-stat b{font:30px Impact,"Arial Black",sans-serif;margin-right:8px}.year-stat span{font-size:10px;color:#777;text-transform:uppercase;letter-spacing:1.5px}.months{display:grid;grid-template-columns:1fr 1fr;gap:22px}.month-card{padding:0;border:1px solid var(--line);background:#0b0b0b}.month-card h3{margin:0;padding:20px;font:32px Impact,"Arial Black",sans-serif;text-transform:uppercase;border-bottom:1px solid var(--line)}.event-row{display:grid;grid-template-columns:56px 1fr 95px;gap:12px;align-items:center;padding:13px 18px;border-bottom:1px solid #202020}.event-row:last-child{border:0}.event-row time{font-size:10px;color:#6e6a63}.event-row strong{font-size:12px;line-height:1.35}.event-row span{font-size:10px;color:#858179;text-align:right}.event-row.champ{box-shadow:inset 3px 0 var(--lime)}.event-row.champ span{color:var(--lime);font-weight:800}
+.djonga{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.djonga-number{font:clamp(90px,14vw,210px)/.75 Impact,"Arial Black",sans-serif}.djonga-copy h3{font:clamp(35px,5vw,72px)/.9 Impact,"Arial Black",sans-serif;text-transform:uppercase;margin:0 0 20px}.djonga-copy p{color:#999;line-height:1.75}.gallery-grid{columns:3 260px;column-gap:10px}.gallery-item{width:100%;padding:0;border:0;background:none;cursor:pointer;margin:0 0 10px;display:block;break-inside:avoid}.gallery-item img{width:100%;display:block;filter:saturate(.92);transition:.25s transform,.25s filter}.gallery-item:hover img{transform:scale(1.015);filter:saturate(1.08)}.lightbox{position:fixed;z-index:100;inset:0;background:#000e;display:none;align-items:center;justify-content:center;padding:24px}.lightbox.open{display:flex}.lightbox img{max-width:94vw;max-height:90vh;object-fit:contain}.lightbox button{position:absolute;top:20px;right:20px;width:46px;height:46px;border:1px solid #555;background:#111;color:#fff;font-size:24px;cursor:pointer}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:48px}.contact-link{border:1px solid #3b3b3b;padding:26px}.contact-link small{display:block;color:#6e6a63;letter-spacing:2px;font-size:9px;margin-bottom:9px}.contact-link b{font:clamp(22px,3vw,40px) Impact,"Arial Black",sans-serif}.contact-link:hover{border-color:var(--lime)}footer{padding:30px 8vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:#5e5b55;font-size:9px;letter-spacing:1.7px;text-transform:uppercase}.top-btn{position:fixed;z-index:45;right:18px;bottom:18px;width:46px;height:46px;border:1px solid #555;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:.2s}.top-btn.show{opacity:1;pointer-events:auto}
+.reveal{opacity:0;transform:translateY(18px);transition:.55s ease}.reveal.in{opacity:1;transform:none}
+@media(max-width:1050px){.desktop-nav{gap:13px}.desktop-nav a{font-size:9px}.battle-summary{grid-template-columns:repeat(3,1fr)}.battle-content{grid-template-columns:1fr}}
+@media(max-width:780px){
+ .header{height:64px;padding:0 5vw}.desktop-nav{display:none}.menu-btn{display:block}.mobile-nav{position:fixed;z-index:49;top:64px;left:0;right:0;background:#0b0b0bf8;border-bottom:1px solid #333;padding:14px 5vw 20px;display:none}.mobile-nav.open{display:grid}.mobile-nav a{padding:14px 0;border-bottom:1px solid #252525;text-transform:uppercase;font-size:11px;letter-spacing:1.5px}
+ .hero{padding:0 6vw 8vh;background-position:64% center}.hero h1{font-size:42vw;letter-spacing:-.055em}.hero-desc{font-size:15px}.hero-actions .btn{flex:1}
+ .section{padding:86px 6vw}.section-head{grid-template-columns:1fr;gap:22px;margin-bottom:40px}.section h2{font-size:18vw}.about-grid,.flyer-grid,.djonga,.contact-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.track-list{grid-template-columns:1fr}.track-card{grid-template-columns:64px 1fr;min-height:82px}.track-media{width:64px;height:64px}
+ .battle-summary{grid-template-columns:1fr 1fr}.battle-summary a{min-height:120px}.battle-detail-head{grid-template-columns:82px 1fr}.battle-logo{width:82px;height:82px}.title-grid{grid-template-columns:1fr 1fr}.months{grid-template-columns:1fr}.event-row{grid-template-columns:47px 1fr 78px;padding:12px}.event-row strong{font-size:11px}.event-row span{font-size:9px}
+ .gallery-grid{columns:2 140px}footer{display:block;line-height:1.8}.djonga-number{font-size:31vw}
+}
+@media(max-width:430px){.battle-summary{grid-template-columns:1fr 1fr}.title-grid{grid-template-columns:1fr}.gallery-grid{columns:1}}
+
+.djonga-video{margin-top:42px;border:1px solid var(--line);background:#0a0a0a}
+.djonga-video video{width:100%;display:block;background:#000;max-height:760px}
+.djonga-video-caption{padding:14px 16px;color:#777;font-size:10px;letter-spacing:1.8px;text-transform:uppercase}
+.contact-grid{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:780px){.contact-grid{grid-template-columns:1fr}}
+
+
+.page-hero{min-height:58vh;padding:150px 8vw 70px;display:flex;align-items:flex-end;background:radial-gradient(circle at 80% 10%,#262626 0,#101010 32%,#080808 68%);border-bottom:1px solid var(--line)}
+.page-hero h1{font:clamp(72px,13vw,180px)/.8 Impact,"Arial Black",sans-serif;text-transform:uppercase;letter-spacing:-.05em;margin:24px 0 15px}
+.page-hero p{max-width:700px;color:#aaa69d;line-height:1.7;font-size:17px}
+.breadcrumb{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#777}
+.breadcrumb a:hover{color:var(--lime)}
+.page-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.content-block{padding:90px 8vw;border-top:1px solid var(--line)}
+.content-block h2{font:clamp(48px,7vw,100px)/.86 Impact,"Arial Black",sans-serif;text-transform:uppercase;letter-spacing:-.04em;margin:0 0 38px}
+.mini-note{color:#8d8981;line-height:1.7;max-width:720px}
+.page-footer-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:40px}
+@media(max-width:780px){.page-hero{padding:120px 6vw 55px;min-height:50vh}.content-block{padding:72px 6vw}.page-hero h1{font-size:22vw}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"Sobre o Lz | Site Oficial",
+  "url":"https://lzoficial.github.io/sobre/",
+  "description":"Conheça Lz, MC e artista de Bragança Paulista: trajetória nas batalhas de rima, música, MSMV e presença de palco.",
+  "isPartOf":{"@type":"WebSite","name":"Lz","url":"https://lzoficial.github.io/"}
+}
+</script>
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="/">L<b>Z</b></a>
+  <nav class="desktop-nav">
+    <a href="/">Início</a><a href="/sobre/">Sobre</a><a href="/msmv/">MSMV</a><a href="/batalhas/">Batalhas</a><a href="/#galeria">Galeria</a><a href="/#contato">Contato</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">MENU</button>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="/">Início</a><a href="/sobre/">Sobre</a><a href="/msmv/">MSMV</a><a href="/batalhas/">Batalhas</a><a href="/#galeria">Galeria</a><a href="/#contato">Contato</a>
+</nav>
+
+<section class="page-hero">
+  <div>
+    <div class="breadcrumb"><a href="/">Lz</a> / Sobre</div>
+    <h1>Sobre o Lz</h1>
+    <p>Biografia, identidade artística, origem em Bragança Paulista e a conexão entre batalhas de rima, palco e música.</p>
+    <div class="page-nav"><a class="btn primary" href="/msmv/">Conhecer MSMV</a><a class="btn" href="/batalhas/">Ver batalhas</a></div>
+  </div>
+</section>
+<section class="section" id="sobre">
+  <div class="label">01 — APRESENTAÇÃO</div>
+  <div class="section-head"><h2>QUEM É<br><em>O LZ?</em></h2></div>
+  <div class="about-grid reveal">
+    <div class="about-copy">
+      <p class="about-lead">Lz é um artista e MC de 17 anos, nascido e criado em Bragança Paulista, São Paulo.</p>
+      <p>Carregando a vivência do interior paulista para o microfone, constrói uma identidade própria unindo a energia das ruas com uma escrita direta, ambição e personalidade.</p>
+      <p>Nas batalhas de rima, desenvolveu improviso, agilidade mental, presença de palco e conexão com a cultura underground. No estúdio, essa experiência se transforma em composição e em um repertório que atravessa rap, trap e texturas melódicas.</p>
+      <p>O projeto <b>MSMV — Me Subestimem Mais Vezes</b> funciona como manifesto: 23 faixas sobre vivências, superações, ambições e a realidade de quem constrói o próprio caminho na música independente.</p>
+    </div>
+    <div class="about-points">
+      <div class="about-point"><b>Batalhas</b><p>Improviso, punchlines, versatilidade e presença diante do público.</p></div>
+      <div class="about-point"><b>MSMV</b><p>23 faixas com o mesmo peso dentro da obra — nenhuma tratada como “a melhor”.</p></div>
+      <div class="about-point"><b>Visão</b><p>Bragança Paulista no mapa, carreira construída no corre e evolução constante dentro e fora da roda.</p></div>
+    </div>
+  </div>
+  <div class="stats reveal">
+    <div class="stat"><b>23</b><span>faixas no MSMV</span></div>
+    <div class="stat"><b>15</b><span>folhinhas</span></div>
+    <div class="stat"><b>+7K</b><span>pessoas no show do Djonga</span></div>
+    <div class="stat"><b>29</b><span>registros em 2026</span></div>
+  </div>
+</section>
+<section class="content-block">
+  <h2>TRAJETÓRIA</h2>
+  <p class="mini-note">O trabalho do Lz reúne duas frentes que se alimentam: a experiência das batalhas de rima e a construção de uma identidade autoral no estúdio. O site registra essa evolução por meio de músicas, títulos, vídeos, fotos e apresentações.</p>
+  <div class="page-footer-links"><a class="btn" href="/msmv/">MSMV</a><a class="btn" href="/batalhas/">Batalhas</a><a class="btn" href="/#contato">Contato</a></div>
+</section>
+
+<footer><span>© 2026 LZ — SITE OFICIAL</span><span>MSMV • BATALHAS • BRAGANÇA PAULISTA</span></footer>
+<a class="top-btn" id="topBtn" href="#" aria-label="Voltar ao topo">↑</a>
+<script>
+const menuBtn=document.getElementById('menuBtn'), mobileNav=document.getElementById('mobileNav');
+menuBtn.addEventListener('click',()=>mobileNav.classList.toggle('open'));
+mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileNav.classList.remove('open')));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const topBtn=document.getElementById('topBtn');
+addEventListener('scroll',()=>topBtn.classList.toggle('show',scrollY>600),{passive:true});
+</script>
+</body></html>

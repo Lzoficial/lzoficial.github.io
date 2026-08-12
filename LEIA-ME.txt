@@ -46,3 +46,16 @@ ATUALIZAÇÃO V4:
 - Removidos do site público textos internos/editoriais sobre pastas, arquivos enviados, organização do material e construção do site.
 - Removida a observação técnica sobre o flyer antigo ter 22 faixas.
 - O conteúdo público agora fala somente sobre Lz, música, batalhas, trajetória e contato.
+
+ATUALIZAÇÃO MULTIPÁGINAS / SEO:
+- Criada /sobre/
+- Criada /msmv/
+- Criada /batalhas/
+- Página inicial continua com todo o conteúdo original.
+- Navegação da home agora também aponta para as páginas dedicadas.
+- Sitemap atualizado com as 4 URLs.
+- Canonical, meta description e dados estruturados individuais em cada página.
+
+PARA PUBLICAR:
+Substitua o projeto no repositório do GitHub Desktop mantendo a pasta assets.
+Como novas pastas foram adicionadas (sobre, msmv e batalhas), copie TODO o conteúdo deste projeto para a pasta local lzoficial.github.io e faça Commit + Push origin.
