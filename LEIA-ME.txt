@@ -1,0 +1,11 @@
+VERSÃO FINAL — LZ / MSMV
+
+Esta versão mantém o projeto completo e adiciona os dois flyers enviados:
+- msmv-capa.jpg = capa oficial do álbum
+- msmv-tracklist.jpg = flyer oficial da lista de músicas
+
+A seção de músicas mostra os dois flyers e, abaixo, a lista interativa com as 23 faixas.
+O flyer original contém 22 faixas; a faixa 23, "Alter ego", foi incluída na lista final conforme informado pelo usuário.
+
+Também permanecem as fotos, batalhas, 15 folhinhas, show do Djonga (+7.000 pessoas), Instagram e e-mail.
+Abra index.html diretamente no navegador.
