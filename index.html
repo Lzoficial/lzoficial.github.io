@@ -54,6 +54,49 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
 @media(max-width:900px){.contact-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:780px){.contact-grid{grid-template-columns:1fr}}
 
+
+.battle-logo,.battle-logo img{border-radius:50%}
+.battle-logo img{object-fit:contain;background:#050505;padding:7px}
+.journey-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 28px}
+.journey-stats>div{border:1px solid var(--line);padding:24px;background:#0b0b0b}
+.journey-stats b{display:block;font:clamp(38px,6vw,78px) Impact,"Arial Black",sans-serif;color:var(--lime);line-height:1}
+.journey-stats span{text-transform:uppercase;font-size:9px;letter-spacing:2px;color:#777}
+.journey-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.journey-card{border:1px solid var(--line);padding:22px;min-height:195px;background:#090909;display:flex;flex-direction:column}
+.journey-card.champion{border-color:#596b00}
+.journey-card-logo{width:78px;height:78px;border-radius:50%;overflow:hidden;border:1px solid #333;background:#050505;margin-bottom:18px}
+.journey-card-logo img{width:100%;height:100%;object-fit:contain;border-radius:50%}
+.journey-card small{color:#777;font-size:9px;letter-spacing:1.7px;text-transform:uppercase}
+.journey-card.champion small{color:var(--lime)}
+.journey-card h3{font:25px Impact,"Arial Black",sans-serif;text-transform:uppercase;margin:8px 0 7px}
+.journey-card p{color:#999;margin:2px 0;font-size:12px;line-height:1.45}
+.journey-card .details{margin-top:auto;padding-top:16px;color:var(--lime);font-size:9px;letter-spacing:1.5px;text-transform:uppercase}
+.event-feature{display:grid;grid-template-columns:1.2fr .8fr;gap:42px;align-items:center;margin-top:35px}
+.event-feature video{width:100%;display:block;border:1px solid var(--line);background:#000}
+.event-feature h3{font:clamp(36px,5vw,72px)/.9 Impact,"Arial Black",sans-serif;text-transform:uppercase;margin:8px 0 18px}
+.event-feature p,.event-secondary-copy p{color:#999;line-height:1.7}
+.event-secondary{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:center;border-top:1px solid var(--line);margin-top:58px;padding-top:42px}
+.event-secondary img{width:100%;display:block;border:1px solid var(--line)}
+.event-secondary h3{font:clamp(28px,4vw,52px)/.95 Impact,"Arial Black",sans-serif;text-transform:uppercase;margin:7px 0 16px}
+.event-badge{font-size:9px;letter-spacing:2px;color:var(--lime);text-transform:uppercase;font-weight:800}
+.battle-info-hero{display:grid;grid-template-columns:160px 1fr;gap:30px;align-items:center}
+.battle-info-logo{width:160px;height:160px;border-radius:50%;overflow:hidden;border:1px solid #3a3a3a;background:#050505}
+.battle-info-logo img{width:100%;height:100%;object-fit:contain;border-radius:50%}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:38px}
+.info-box{border:1px solid var(--line);background:#0b0b0b;padding:24px}
+.info-box small{display:block;color:#777;font-size:9px;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.info-box b{font-size:16px;line-height:1.45}
+.ig-link{display:inline-flex;margin-top:24px;border:1px solid #4a4a4a;padding:15px 18px;font-weight:800}
+.ig-link:hover{border-color:var(--lime);color:var(--lime)}
+@media(max-width:900px){.journey-grid{grid-template-columns:repeat(2,1fr)}.event-feature,.event-secondary{grid-template-columns:1fr}.info-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.journey-stats{grid-template-columns:1fr 1fr 1fr}.journey-stats>div{padding:16px 10px}.journey-grid{grid-template-columns:1fr}.battle-info-hero{grid-template-columns:90px 1fr}.battle-info-logo{width:90px;height:90px}}
+
+
+.journey-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:16px}
+.journey-actions a{display:inline-flex;align-items:center;justify-content:center;border:1px solid #404040;padding:10px 12px;font-size:9px;letter-spacing:1.4px;text-transform:uppercase}
+.journey-actions a:hover{border-color:var(--lime);color:var(--lime)}
+.journey-actions .primary-link{color:var(--lime)}
+
 </style>
 
 <script type="application/ld+json">
@@ -92,12 +135,12 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
 <header class="header">
   <a class="brand" href="#inicio">L<b>Z</b></a>
   <nav class="desktop-nav">
-    <a href="/sobre/">Sobre</a><a href="/msmv/">MSMV</a><a href="/batalhas/">Batalhas</a><a href="/batalhas/#temporada-2026">2026</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a>
+    <a href="sobre/index.html">Sobre</a><a href="msmv/index.html">MSMV</a><a href="batalhas/index.html">Batalhas</a><a href="/batalhas/#temporada-2026">2026</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a>
   </nav>
   <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">MENU</button>
 </header>
 <nav class="mobile-nav" id="mobileNav">
-  <a href="/sobre/">Sobre o Lz</a><a href="/msmv/">MSMV</a><a href="/batalhas/">Batalhas</a><a href="/batalhas/#temporada-2026">Batalhas 2026</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a>
+  <a href="sobre/index.html">Sobre o Lz</a><a href="msmv/index.html">MSMV</a><a href="batalhas/index.html">Batalhas</a><a href="/batalhas/#temporada-2026">Batalhas 2026</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a>
 </nav>
 
 <main>
@@ -263,9 +306,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
 <section class="section" id="batalhas">
   <div class="label">03 — BATALHAS</div>
   <div class="section-head"><h2>15<br><em>FOLHINHAS.</em></h2></div>
-  <div class="battle-summary reveal">
-    <a href="#batalha-do-olimpo"><strong>05</strong><span>Batalha do Olimpo</span><small>folhinhas</small></a><a href="#batalha-da-sab"><strong>03</strong><span>Batalha da SAB</span><small>folhinhas</small></a><a href="#batalha-do-vem-viver"><strong>03</strong><span>Batalha do Vem Viver</span><small>folhinhas</small></a><a href="#batalha-da-vrg"><strong>02</strong><span>Batalha da VRG</span><small>folhinhas</small></a><a href="#batalha-da-chave"><strong>01</strong><span>Batalha da Chave</span><small>folhinha</small></a><a href="#batalha-do-morangao"><strong>01</strong><span>Batalha do Morangão</span><small>folhinha</small></a>
-  </div>
+  <div class="battle-summary reveal"><a href="batalhas/olimpo/index.html"><strong>05</strong><span>Batalha do Olimpo</span><small>folhinhas</small></a><a href="batalhas/sab/index.html"><strong>03</strong><span>Batalha da SAB</span><small>folhinhas</small></a><a href="batalhas/vem-viver/index.html"><strong>03</strong><span>Batalha do Vem Viver</span><small>folhinhas</small></a><a href="batalhas/vrg/index.html"><strong>02</strong><span>Batalha da VRG</span><small>folhinhas</small></a><a href="batalhas/chave/index.html"><strong>01</strong><span>Batalha da Chave</span><small>folhinha</small></a><a href="batalhas/morangao/index.html"><strong>01</strong><span>Batalha do Morangão</span><small>folhinha</small></a></div>
   
     <article class="battle-detail" id="batalha-do-olimpo">
       <div class="battle-detail-head">
@@ -370,10 +411,109 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
     </article>
 </section>
 
+
+<section class="section alt" id="trajetoria-batalhas">
+  <div class="label">04 — BATALHAS QUE LZ JÁ PARTICIPOU</div>
+  <div class="section-head">
+    <h2>POR ONDE<br><em>LZ JÁ PASSOU.</em></h2>
+    <p class="section-intro">As conquistas ficam em destaque acima; aqui está o histórico das batalhas registradas na caminhada.</p>
+  </div>
+  <div class="journey-stats reveal">
+    <div><b>12</b><span>batalhas</span></div>
+    <div><b>8</b><span>cidades</span></div>
+    <div><b>2</b><span>estados</span></div>
+  </div>
+  <div class="journey-grid reveal"><article class="journey-card champion">
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-olimpo.jpeg" alt="Logo Batalha do Olimpo" loading="lazy"></div>
+      <small>CAMPEÃO 🏆</small>
+      <h3>Batalha do Olimpo</h3>
+      <p>📍 Bragança Paulista/SP</p>
+      <p>Semanalmente • Praça Jacinto Osório (Matadouro)</p>
+      <div class="journey-actions"><a class="primary-link" href="batalhas/olimpo/index.html">Ver informações →</a><a href="https://www.instagram.com/batalhado0limp0?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </article><article class="journey-card champion">
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-sab.jpeg" alt="Logo Batalha da SAB" loading="lazy"></div>
+      <small>CAMPEÃO 🏆</small>
+      <h3>Batalha da SAB</h3>
+      <p>📍 Extrema/MG</p>
+      <p>Quinzenal • Praça Coronel Simeão</p>
+      <div class="journey-actions"><a class="primary-link" href="batalhas/sab/index.html">Ver informações →</a><a href="https://www.instagram.com/batalhadasab?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </article><article class="journey-card champion">
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-vem-viver.jpeg" alt="Logo Batalha do Vem Viver" loading="lazy"></div>
+      <small>CAMPEÃO 🏆</small>
+      <h3>Batalha do Vem Viver</h3>
+      <p>📍 Bragança Paulista/SP</p>
+      <p>Mensalmente • Avenida dos Limoeiros (Parque do Vem Viver)</p>
+      <div class="journey-actions"><a class="primary-link" href="batalhas/vem-viver/index.html">Ver informações →</a><a href="https://www.instagram.com/batalhadovemviver?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </article><article class="journey-card champion">
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-vrg.jpeg" alt="Logo Batalha da VRG" loading="lazy"></div>
+      <small>CAMPEÃO 🏆</small>
+      <h3>Batalha da VRG</h3>
+      <p>📍 Vargem/SP</p>
+      <p>Semanalmente • Lago de Vargem</p>
+      <div class="journey-actions"><a class="primary-link" href="batalhas/vrg/index.html">Ver informações →</a><a href="https://www.instagram.com/bata_lhadavrg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </article><article class="journey-card champion">
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-chave.jpeg" alt="Logo Batalha da Chave" loading="lazy"></div>
+      <small>CAMPEÃO 🏆</small>
+      <h3>Batalha da Chave</h3>
+      <p>📍 Extrema/MG</p>
+      <p>Quinzenal • Parque de Eventos</p>
+      <div class="journey-actions"><a class="primary-link" href="batalhas/chave/index.html">Ver informações →</a><a href="https://www.instagram.com/batalha_da_chave?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </article><article class="journey-card champion">
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-morangao.jpeg" alt="Logo Batalha do Morangão" loading="lazy"></div>
+      <small>CAMPEÃO 🏆</small>
+      <h3>Batalha do Morangão</h3>
+      <p>📍 Águas de Lindóia/SP</p>
+      <p>Mensalmente • Pista de Skate da Popular</p>
+      <div class="journey-actions"><a class="primary-link" href="batalhas/morangao/index.html">Ver informações →</a><a href="https://www.instagram.com/batalhadamorangao?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </article><article class="journey-card">
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-parque.png" alt="Logo Batalha do Parque" loading="lazy"></div>
+      <small>PARTICIPAÇÃO</small>
+      <h3>Batalha do Parque</h3>
+      <p>📍 Bragança Paulista/SP</p>
+      <p>Mensalmente • Praça Narciso Pinheiro</p>
+      <div class="journey-actions"><a class="primary-link" href="batalhas/parque/index.html">Ver informações →</a><a href="https://www.instagram.com/batalha_do_parque_zn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </article><article class="journey-card">
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-home.png" alt="Logo Batalha da Home" loading="lazy"></div>
+      <small>PARTICIPAÇÃO</small>
+      <h3>Batalha da Home</h3>
+      <p>📍 Campinas/SP</p>
+      <p>Quinzenal • Praça João Da Cruz Prates</p>
+      <div class="journey-actions"><a class="primary-link" href="batalhas/home/index.html">Ver informações →</a><a href="https://www.instagram.com/batalhadahome?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </article><article class="journey-card">
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-coreto.png" alt="Logo Batalha do Coreto" loading="lazy"></div>
+      <small>PARTICIPAÇÃO</small>
+      <h3>Batalha do Coreto</h3>
+      <p>📍 Itapira/SP</p>
+      <p>Semanalmente • Coreto do Parque Juca Mulato</p>
+      <div class="journey-actions"><a class="primary-link" href="batalhas/coreto/index.html">Ver informações →</a><a href="https://www.instagram.com/bdcoreto019?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </article><article class="journey-card">
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-joker.png" alt="Logo Batalha da Joker" loading="lazy"></div>
+      <small>PARTICIPAÇÃO</small>
+      <h3>Batalha da Joker</h3>
+      <p>📍 Atibaia/SP</p>
+      <p>Quinzenal • CC / Lago do Major</p>
+      <div class="journey-actions"><a class="primary-link" href="batalhas/joker/index.html">Ver informações →</a><a href="https://www.instagram.com/bdj_011?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </article><article class="journey-card">
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-imperio.png" alt="Logo Batalha do Império" loading="lazy"></div>
+      <small>PARTICIPAÇÃO</small>
+      <h3>Batalha do Império</h3>
+      <p>📍 Atibaia/SP</p>
+      <p>Mensalmente • Jardim Imperial</p>
+      <div class="journey-actions"><a class="primary-link" href="batalhas/imperio/index.html">Ver informações →</a><a href="https://www.instagram.com/imperio.crew?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </article><article class="journey-card">
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-melodias.png" alt="Logo Batalha da Melodias" loading="lazy"></div>
+      <small>PARTICIPAÇÃO</small>
+      <h3>Batalha da Melodias</h3>
+      <p>📍 Bragança Paulista/SP</p>
+      <p>Mensalmente • Lago do Taboão</p>
+      <div class="journey-actions"><a class="primary-link" href="batalhas/melodias/index.html">Ver informações →</a><a href="https://www.instagram.com/batalha_da_melodias?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </article></div>
+</section>
+
 <section class="section alt" id="2026">
   <div class="label">04 — TEMPORADA 2026</div>
   <div class="section-head"><h2>BATALHAS<br><em>2026.</em></h2></div>
-  <div class="year-stats"><div class="year-stat"><b>29</b><span>registros</span></div><div class="year-stat"><b>8</b><span>títulos em 2026</span></div></div>
+  <div class="year-stats"><div class="year-stat"><b>27</b><span>registros em batalhas</span></div><div class="year-stat"><b>7</b><span>títulos em 2026</span></div></div>
   <div class="months reveal"><section class="month-card"><h3>Janeiro</h3><div class="event-row champ">
           <time>10/01</time>
           <strong>Batalha do vem viver</strong>
@@ -417,10 +557,6 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
           <span>Campeão 🏆</span>
         </div></section>
 <section class="month-card"><h3>Março</h3><div class="event-row ">
-          <time>09/03</time>
-          <strong>Rima na escola sobre misoginia</strong>
-          <span>Participação</span>
-        </div><div class="event-row ">
           <time>14/03</time>
           <strong>Batalha do Olimpo</strong>
           <span>Final</span>
@@ -484,10 +620,6 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
           <time>09/07</time>
           <strong>Batalha da Joker</strong>
           <span>Semifinal</span>
-        </div><div class="event-row champ">
-          <time>17/07</time>
-          <strong>Batalha da Paulista</strong>
-          <span>Campeão 🏆</span>
         </div><div class="event-row ">
           <time>18/07</time>
           <strong>Batalha da SAB</strong>
@@ -500,23 +632,35 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
 </section>
 
 
-<section class="section" id="djonga">
-  <div class="label">05 — PALCO</div>
-  <div class="djonga reveal">
-    <div class="djonga-number">+7.000</div>
-    <div class="djonga-copy">
-      <h3>ABERTURA DO SHOW DO DJONGA</h3>
-      <p>Um dos marcos da trajetória: apresentação para mais de 7 mil pessoas na abertura do show do Djonga, durante o evento de Consciência Negra. O vídeo abaixo registra esse momento.</p>
+
+<section class="section" id="eventos">
+  <div class="label">06 — EVENTOS</div>
+  <div class="section-head"><h2>ALÉM<br><em>DAS BATALHAS.</em></h2><p class="section-intro">Apresentações que também fazem parte da trajetória do Lz.</p></div>
+
+  <article class="event-feature reveal">
+    <div>
+      <video controls preload="metadata" playsinline>
+        <source src="assets/battles/videos/batalha-da-sab-evento-consciencia-negra-show-do-djonga.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
     </div>
-  </div>
-  <div class="djonga-video reveal">
-    <video controls preload="metadata" playsinline>
-      <source src="assets/battles/videos/batalha-da-sab-evento-consciencia-negra-show-do-djonga.mp4" type="video/mp4">
-      Seu navegador não suporta vídeo HTML5.
-    </video>
-    <div class="djonga-video-caption">Batalha da SAB — Evento Consciência Negra</div>
-  </div>
+    <div>
+      <span class="event-badge">DESTAQUE • +7.000 PESSOAS</span>
+      <h3>ABERTURA DO SHOW DO DJONGA</h3>
+      <p>Apresentação durante o evento de Consciência Negra, para mais de 7 mil pessoas, na abertura do show do Djonga.</p>
+    </div>
+  </article>
+
+  <article class="event-secondary reveal">
+    <img src="assets/events/apresentacao-antimisoginia-sesi-012.jpeg" alt="Apresentação sobre antimisoginia no SESI-012 em Bragança Paulista" loading="lazy">
+    <div class="event-secondary-copy">
+      <span class="event-badge">APRESENTAÇÃO</span>
+      <h3>ANTIMISOGINIA NO SESI-012</h3>
+      <p>Apresentação realizada no SESI-012, em Bragança Paulista, contando com todos os alunos do Ensino Médio.</p>
+    </div>
+  </article>
 </section>
+
 
 <section class="section alt" id="galeria">
   <div class="label">06 — GALERIA</div>
@@ -526,7 +670,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
 
 <section class="section" id="contato">
   <div class="label">07 — CONTATO</div>
-  <div class="section-head"><h2>FALA COM<br><em>O LZ.</em></h2><p class="section-intro">Shows, eventos, collabs, imprensa e contato profissional.</p></div>
+  <div class="section-head"><h2>FALE COM<br><em>O LZ.</em></h2><p class="section-intro">Shows, eventos, collabs, imprensa e contato profissional.</p></div>
   
 <div class="contact-grid reveal">
     <a class="contact-link" href="https://www.instagram.com/lzzinnzx__?igsh=ZHUyNGx1dDhpd2x6&utm_source=qr" target="_blank" rel="noopener">
@@ -545,9 +689,9 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
   <div class="label">07 — EXPLORAR</div>
   <div class="section-head"><h2>CONHEÇA<br><em>O PROJETO.</em></h2></div>
   <div class="contact-grid reveal">
-    <a class="contact-link" href="/sobre/"><small>BIOGRAFIA</small><b>Sobre o Lz ↗</b></a>
-    <a class="contact-link" href="/msmv/"><small>ÁLBUM</small><b>MSMV ↗</b></a>
-    <a class="contact-link" href="/batalhas/"><small>TRAJETÓRIA</small><b>Batalhas ↗</b></a>
+    <a class="contact-link" href="sobre/index.html"><small>BIOGRAFIA</small><b>Sobre o Lz ↗</b></a>
+    <a class="contact-link" href="msmv/index.html"><small>ÁLBUM</small><b>MSMV ↗</b></a>
+    <a class="contact-link" href="batalhas/index.html"><small>TRAJETÓRIA</small><b>Batalhas ↗</b></a>
   </div>
 </section>
 

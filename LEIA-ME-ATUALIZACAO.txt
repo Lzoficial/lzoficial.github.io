@@ -1,0 +1,17 @@
+PREVIEW — BATALHAS + EVENTOS
+
+Mudanças:
+- Batalha da Paulista removida.
+- 15 folhinhas continuam separadas como conquistas.
+- Nova seção com 12 batalhas em que Lz já participou.
+- Batalha da Melodias adicionada.
+- Cada batalha tem página própria com cidade, frequência, local e link de Instagram.
+- Logos novas padronizadas em formato circular para combinar com a identidade das logos do site.
+- Evento de antimisoginia adicionado com foto do SESI-012.
+- Show do Djonga continua como evento principal/destaque.
+- Registro da antimisoginia saiu da timeline de batalhas e foi para Eventos.
+- Batalha da Paulista saiu da timeline.
+- Estatística 2026 atualizada para 27 registros em batalhas e 7 títulos.
+- Nova capa do MSMV e nova tracklist preservadas.
+
+Esta é uma versão de PREVIEW. Abra index.html ou batalhas/index.html para conferir antes de publicar.

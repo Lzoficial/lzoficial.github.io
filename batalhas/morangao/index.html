@@ -3,17 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Sobre o Lz | Site Oficial</title>
-<meta name="description" content="Conheça Lz, MC e artista de Bragança Paulista: trajetória nas batalhas de rima, música, MSMV e presença de palco.">
-<meta name="theme-color" content="#080808">
-<link rel="canonical" href="https://lzoficial.github.io/sobre/">
-<meta property="og:site_name" content="Lz Oficial">
-<meta property="og:title" content="Sobre o Lz | Site Oficial">
-<meta property="og:description" content="Conheça Lz, MC e artista de Bragança Paulista: trajetória nas batalhas de rima, música, MSMV e presença de palco.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://lzoficial.github.io/sobre/">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<title>Batalha do Morangão | Lz</title>
+<meta name="description" content="Batalha do Morangão — Águas de Lindóia/SP. Informações, frequência, local e trajetória do Lz.">
+<link rel="canonical" href="https://lzoficial.github.io/batalhas/morangao/">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
 <style>
 :root{--bg:#080808;--bg2:#0d0d0d;--fg:#f4f1ea;--muted:#9b978e;--line:#2a2a2a;--lime:#d9ff00;--gold:#b48b43}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
@@ -62,76 +55,78 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
 .mini-note{color:#8d8981;line-height:1.7;max-width:720px}
 .page-footer-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:40px}
 @media(max-width:780px){.page-hero{padding:120px 6vw 55px;min-height:50vh}.content-block{padding:72px 6vw}.page-hero h1{font-size:22vw}}
+
+.battle-logo,.battle-logo img{border-radius:50%}
+.battle-logo img{object-fit:contain;background:#050505;padding:7px}
+.journey-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 28px}
+.journey-stats>div{border:1px solid var(--line);padding:24px;background:#0b0b0b}
+.journey-stats b{display:block;font:clamp(38px,6vw,78px) Impact,"Arial Black",sans-serif;color:var(--lime);line-height:1}
+.journey-stats span{text-transform:uppercase;font-size:9px;letter-spacing:2px;color:#777}
+.journey-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.journey-card{border:1px solid var(--line);padding:22px;min-height:195px;background:#090909;display:flex;flex-direction:column}
+.journey-card.champion{border-color:#596b00}
+.journey-card-logo{width:78px;height:78px;border-radius:50%;overflow:hidden;border:1px solid #333;background:#050505;margin-bottom:18px}
+.journey-card-logo img{width:100%;height:100%;object-fit:contain;border-radius:50%}
+.journey-card small{color:#777;font-size:9px;letter-spacing:1.7px;text-transform:uppercase}
+.journey-card.champion small{color:var(--lime)}
+.journey-card h3{font:25px Impact,"Arial Black",sans-serif;text-transform:uppercase;margin:8px 0 7px}
+.journey-card p{color:#999;margin:2px 0;font-size:12px;line-height:1.45}
+.journey-card .details{margin-top:auto;padding-top:16px;color:var(--lime);font-size:9px;letter-spacing:1.5px;text-transform:uppercase}
+.event-feature{display:grid;grid-template-columns:1.2fr .8fr;gap:42px;align-items:center;margin-top:35px}
+.event-feature video{width:100%;display:block;border:1px solid var(--line);background:#000}
+.event-feature h3{font:clamp(36px,5vw,72px)/.9 Impact,"Arial Black",sans-serif;text-transform:uppercase;margin:8px 0 18px}
+.event-feature p,.event-secondary-copy p{color:#999;line-height:1.7}
+.event-secondary{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:center;border-top:1px solid var(--line);margin-top:58px;padding-top:42px}
+.event-secondary img{width:100%;display:block;border:1px solid var(--line)}
+.event-secondary h3{font:clamp(28px,4vw,52px)/.95 Impact,"Arial Black",sans-serif;text-transform:uppercase;margin:7px 0 16px}
+.event-badge{font-size:9px;letter-spacing:2px;color:var(--lime);text-transform:uppercase;font-weight:800}
+.battle-info-hero{display:grid;grid-template-columns:160px 1fr;gap:30px;align-items:center}
+.battle-info-logo{width:160px;height:160px;border-radius:50%;overflow:hidden;border:1px solid #3a3a3a;background:#050505}
+.battle-info-logo img{width:100%;height:100%;object-fit:contain;border-radius:50%}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:38px}
+.info-box{border:1px solid var(--line);background:#0b0b0b;padding:24px}
+.info-box small{display:block;color:#777;font-size:9px;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.info-box b{font-size:16px;line-height:1.45}
+.ig-link{display:inline-flex;margin-top:24px;border:1px solid #4a4a4a;padding:15px 18px;font-weight:800}
+.ig-link:hover{border-color:var(--lime);color:var(--lime)}
+@media(max-width:900px){.journey-grid{grid-template-columns:repeat(2,1fr)}.event-feature,.event-secondary{grid-template-columns:1fr}.info-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.journey-stats{grid-template-columns:1fr 1fr 1fr}.journey-stats>div{padding:16px 10px}.journey-grid{grid-template-columns:1fr}.battle-info-hero{grid-template-columns:90px 1fr}.battle-info-logo{width:90px;height:90px}}
+
 </style>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebPage",
-  "name":"Sobre o Lz | Site Oficial",
-  "url":"https://lzoficial.github.io/sobre/",
-  "description":"Conheça Lz, MC e artista de Bragança Paulista: trajetória nas batalhas de rima, música, MSMV e presença de palco.",
-  "isPartOf":{"@type":"WebSite","name":"Lz","url":"https://lzoficial.github.io/"}
-}
-</script>
 </head>
 <body>
 <header class="header">
-  <a class="brand" href="../index.html">L<b>Z</b></a>
-  <nav class="desktop-nav">
-    <a href="../index.html">Início</a><a href="../sobre/index.html">Sobre</a><a href="../msmv/index.html">MSMV</a><a href="../batalhas/index.html">Batalhas</a><a href="/#galeria">Galeria</a><a href="../index.html#contato">Contato</a>
-  </nav>
-  <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">MENU</button>
+  <a class="brand" href="../../index.html">L<b>Z</b></a>
+  <nav class="desktop-nav"><a href="../../index.html">Início</a><a href="../../sobre/index.html">Sobre</a><a href="../../msmv/index.html">MSMV</a><a href="../../batalhas/index.html">Batalhas</a><a href="../../index.html#contato">Contato</a></nav>
+  <button class="menu-btn" id="menuBtn">MENU</button>
 </header>
-<nav class="mobile-nav" id="mobileNav">
-  <a href="../index.html">Início</a><a href="../sobre/index.html">Sobre</a><a href="../msmv/index.html">MSMV</a><a href="../batalhas/index.html">Batalhas</a><a href="/#galeria">Galeria</a><a href="../index.html#contato">Contato</a>
-</nav>
+<nav class="mobile-nav" id="mobileNav"><a href="../../index.html">Início</a><a href="../../sobre/index.html">Sobre</a><a href="../../msmv/index.html">MSMV</a><a href="../../batalhas/index.html">Batalhas</a><a href="../../index.html#contato">Contato</a></nav>
 
 <section class="page-hero">
   <div>
-    <div class="breadcrumb"><a href="../index.html">Lz</a> / Sobre</div>
-    <h1>Sobre o Lz</h1>
-    <p>Biografia, identidade artística, origem em Bragança Paulista e a conexão entre batalhas de rima, palco e música.</p>
-    <div class="page-nav"><a class="btn primary" href="../msmv/index.html">Conhecer MSMV</a><a class="btn" href="../batalhas/index.html">Ver batalhas</a></div>
-  </div>
-</section>
-<section class="section" id="sobre">
-  <div class="label">01 — APRESENTAÇÃO</div>
-  <div class="section-head"><h2>QUEM É<br><em>O LZ?</em></h2></div>
-  <div class="about-grid reveal">
-    <div class="about-copy">
-      <p class="about-lead">Lz é um artista e MC de 17 anos, nascido e criado em Bragança Paulista, São Paulo.</p>
-      <p>Carregando a vivência do interior paulista para o microfone, constrói uma identidade própria unindo a energia das ruas com uma escrita direta, ambição e personalidade.</p>
-      <p>Nas batalhas de rima, desenvolveu improviso, agilidade mental, presença de palco e conexão com a cultura underground. No estúdio, essa experiência se transforma em composição e em um repertório que atravessa rap, trap e texturas melódicas.</p>
-      <p>O projeto <b>MSMV — Me Subestimem Mais Vezes</b> funciona como manifesto: 23 faixas sobre vivências, superações, ambições e a realidade de quem constrói o próprio caminho na música independente.</p>
-    </div>
-    <div class="about-points">
-      <div class="about-point"><b>Batalhas</b><p>Improviso, punchlines, versatilidade e presença diante do público.</p></div>
-      <div class="about-point"><b>MSMV</b><p>23 faixas com o mesmo peso dentro da obra — nenhuma tratada como “a melhor”.</p></div>
-      <div class="about-point"><b>Visão</b><p>Bragança Paulista no mapa, carreira construída no corre e evolução constante dentro e fora da roda.</p></div>
+    <div class="breadcrumb"><a href="../../index.html">Lz</a> / <a href="../../batalhas/index.html">Batalhas</a> / Batalha do Morangão</div>
+    <div class="battle-info-hero">
+      <div class="battle-info-logo"><img src="../../assets/battles/logos/batalha-do-morangao.jpeg" alt="Logo Batalha do Morangão"></div>
+      <div><div class="label">1 folhinha</div><h1>Batalha do Morangão</h1></div>
     </div>
   </div>
-  <div class="stats reveal">
-    <div class="stat"><b>23</b><span>faixas no MSMV</span></div>
-    <div class="stat"><b>15</b><span>folhinhas</span></div>
-    <div class="stat"><b>+7K</b><span>pessoas no show do Djonga</span></div>
-    <div class="stat"><b>29</b><span>registros em 2026</span></div>
-  </div>
-</section>
-<section class="content-block">
-  <h2>TRAJETÓRIA</h2>
-  <p class="mini-note">O trabalho do Lz reúne duas frentes que se alimentam: a experiência das batalhas de rima e a construção de uma identidade autoral no estúdio. O site registra essa evolução por meio de músicas, títulos, vídeos, fotos e apresentações.</p>
-  <div class="page-footer-links"><a class="btn" href="../msmv/index.html">MSMV</a><a class="btn" href="../batalhas/index.html">Batalhas</a><a class="btn" href="../index.html#contato">Contato</a></div>
 </section>
 
-<footer><span>© 2026 LZ — SITE OFICIAL</span><span>MSMV • BATALHAS • BRAGANÇA PAULISTA</span></footer>
-<a class="top-btn" id="topBtn" href="#" aria-label="Voltar ao topo">↑</a>
+<section class="content-block">
+  <h2>INFORMAÇÕES</h2>
+  <div class="info-grid">
+    <div class="info-box"><small>CIDADE</small><b>Águas de Lindóia/SP</b></div>
+    <div class="info-box"><small>QUANDO ACONTECE</small><b>Mensalmente</b></div>
+    <div class="info-box"><small>LOCAL</small><b>Pista de Skate da Popular</b></div>
+  </div>
+  <a class="ig-link" href="https://www.instagram.com/batalhadamorangao?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Batalha do Morangão ↗</a>
+  <div class="page-footer-links"><a class="btn" href="../../batalhas/index.html">Voltar para batalhas</a></div>
+</section>
+
+<footer><span>© 2026 LZ — SITE OFICIAL</span><span>Batalha do Morangão • Águas de Lindóia/SP</span></footer>
 <script>
 const menuBtn=document.getElementById('menuBtn'), mobileNav=document.getElementById('mobileNav');
 menuBtn.addEventListener('click',()=>mobileNav.classList.toggle('open'));
 mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileNav.classList.remove('open')));
-const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.08});
-document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-const topBtn=document.getElementById('topBtn');
-addEventListener('scroll',()=>topBtn.classList.toggle('show',scrollY>600),{passive:true});
 </script>
 </body></html>
