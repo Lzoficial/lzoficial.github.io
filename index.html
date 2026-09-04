@@ -96,6 +96,169 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
 .journey-actions a:hover{border-color:var(--lime);color:var(--lime)}
 .journey-actions .primary-link{color:var(--lime)}
 
+
+/* ===== MOBILE MONSTRO — LZ OFICIAL ===== */
+.section{content-visibility:auto;contain-intrinsic-size:900px}
+img{height:auto}
+video{background:#000}
+
+@media(max-width:780px){
+  html{scroll-padding-top:64px}
+  body{font-size:15px;-webkit-text-size-adjust:100%}
+  .header{
+    height:64px;padding:0 18px;background:#080808f2;
+    backdrop-filter:none;border-bottom:1px solid #202020
+  }
+  .brand{font-size:34px}
+  .menu-btn{
+    display:flex;align-items:center;justify-content:center;
+    min-width:92px;min-height:44px;padding:0 16px;
+    border:1px solid #555;background:#0d0d0d;font-weight:800;
+    letter-spacing:1.4px
+  }
+
+  .mobile-nav{
+    position:fixed;z-index:49;top:64px;inset-inline:0;
+    height:calc(100dvh - 64px);padding:14px 18px 28px;
+    background:#080808;overflow:auto;display:none
+  }
+  .mobile-nav.open{display:flex;flex-direction:column}
+  .mobile-nav a{
+    display:flex;align-items:center;min-height:58px;
+    border-bottom:1px solid #262626;font-size:13px;
+    letter-spacing:1.7px;text-transform:uppercase;font-weight:800
+  }
+
+  .hero{
+    min-height:78svh;padding:0 20px 56px;
+    background-position:62% center
+  }
+  .hero:after{
+    background:linear-gradient(0deg,#080808 0%,rgba(8,8,8,.55) 48%,rgba(8,8,8,.12) 100%)
+  }
+  .eyebrow,.label,.kicker{font-size:9px;letter-spacing:2.2px}
+  .hero h1{font-size:33vw;line-height:.74;margin:16px 0 24px}
+  .hero-sub{font-size:clamp(28px,9vw,44px);line-height:.93}
+  .hero-desc{font-size:14px;line-height:1.55;max-width:92%;margin-top:16px}
+  .hero-actions{gap:8px;margin-top:20px}
+  .hero-actions .btn{flex:1;min-width:0;padding:0 10px}
+
+  .section{padding:64px 18px}
+  .section-head{display:block;margin:18px 0 30px}
+  .section h2{font-size:17vw;line-height:.86}
+  .section-intro{margin-top:20px;font-size:14px;line-height:1.55}
+
+  .about-grid{display:block}
+  .about-lead{font-size:24px;line-height:1.18}
+  .about-copy p{line-height:1.65;font-size:14px}
+  .about-points{margin-top:28px}
+  .about-point{padding:18px}
+  .about-point b{font-size:24px}
+
+  .stats{grid-template-columns:1fr 1fr;margin-top:38px}
+  .stat{padding:20px 14px;min-height:104px}
+  .stat b{font-size:42px}
+  .stat span{font-size:8px;line-height:1.4}
+
+  .flyer-grid{
+    display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;
+    margin:0 -18px 42px;padding:0 18px 8px
+  }
+  .flyer-card{min-width:84vw;scroll-snap-align:center}
+  .flyer-card figcaption{padding:10px 4px 3px}
+
+  .track-list{grid-template-columns:1fr}
+  .track-card{grid-template-columns:58px 1fr;min-height:72px;padding:7px}
+  .track-media{width:58px;height:58px}
+  .track-meta h3{font-size:14px}
+  .track-placeholder{font-size:22px}
+
+  .battle-summary{
+    display:flex;overflow-x:auto;scroll-snap-type:x mandatory;
+    gap:8px;background:none;border:0;margin:0 -18px 44px;padding:0 18px 8px
+  }
+  .battle-summary a{
+    flex:0 0 44vw;scroll-snap-align:start;border:1px solid var(--line);
+    min-height:120px;padding:18px 14px
+  }
+  .battle-summary strong{font-size:42px}
+
+  .battle-detail{padding:30px 0 38px}
+  .battle-detail-head{
+    grid-template-columns:72px 1fr auto;gap:14px;margin:0;cursor:pointer
+  }
+  .battle-logo{width:72px;height:72px}
+  .battle-detail-head h3{font-size:26px;line-height:.95}
+  .battle-content{display:block;margin-top:24px}
+  .battle-content>div+div{margin-top:32px}
+  .battle-content>div>h4{font-size:21px;margin-bottom:14px}
+  .video-grid{gap:12px}
+  .video-card video{max-height:none;aspect-ratio:16/9;object-fit:contain}
+  .video-card h4{font-size:12px;padding:12px}
+  .title-grid{grid-template-columns:1fr 1fr;gap:8px}
+  .title-shot figcaption{font-size:8px}
+  .mobile-battle-toggle{
+    width:38px;height:38px;border:1px solid #444;background:#111;color:var(--lime);
+    display:flex;align-items:center;justify-content:center;font-size:20px;
+    transition:transform .18s ease
+  }
+  .battle-detail.mobile-collapsed .battle-content{display:none}
+  .battle-detail:not(.mobile-collapsed) .mobile-battle-toggle{transform:rotate(45deg)}
+
+  .journey-stats{grid-template-columns:repeat(3,1fr);gap:6px}
+  .journey-stats>div{padding:14px 8px}
+  .journey-stats b{font-size:34px}
+  .journey-grid{grid-template-columns:1fr;gap:10px}
+  .journey-card{min-height:0;padding:18px;display:grid;grid-template-columns:64px 1fr;column-gap:14px}
+  .journey-card-logo{grid-row:1/5;width:64px;height:64px;margin:0}
+  .journey-card small,.journey-card h3,.journey-card p,.journey-actions{grid-column:2}
+  .journey-card h3{font-size:22px;margin:5px 0}
+  .journey-card p{font-size:11px}
+  .journey-actions{padding-top:12px}
+  .journey-actions a{flex:1;min-height:38px}
+
+  .months{grid-template-columns:1fr;gap:12px}
+  .month-card h3{font-size:27px;padding:16px}
+  .event-row{grid-template-columns:48px 1fr 78px;gap:8px;padding:12px}
+  .event-row strong{font-size:11px}
+  .event-row span{font-size:8px}
+
+  .event-feature,.event-secondary{grid-template-columns:1fr;gap:20px}
+  .event-feature h3,.event-secondary h3{font-size:35px}
+  .event-feature video{aspect-ratio:16/9;max-height:none}
+  .event-secondary{margin-top:38px;padding-top:30px}
+
+  .gallery-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:8px;columns:auto
+  }
+  .gallery-item{margin:0}
+  .gallery-item img{height:100%;aspect-ratio:4/5;object-fit:cover}
+
+  .contact-grid{grid-template-columns:1fr;gap:8px;margin-top:28px}
+  .contact-link{padding:20px}
+  .contact-link b{font-size:26px}
+
+  footer{padding:24px 18px;font-size:8px;line-height:1.7}
+  .top-btn{width:48px;height:48px;right:14px;bottom:14px}
+
+  .reveal,.reveal.in{
+    opacity:1!important;transform:none!important;transition:none!important
+  }
+
+  /* Menos trabalho de pintura/render no celular */
+  .gallery-item img,.contact-link,.btn,.journey-card,.video-card{
+    transition:none!important
+  }
+}
+
+@media(max-width:390px){
+  .hero h1{font-size:36vw}
+  .section h2{font-size:18vw}
+  .battle-summary a{flex-basis:48vw}
+  .event-row{grid-template-columns:44px 1fr 70px}
+}
+
+@media(max-width:780px){.hero{background-image:url("/assets/photos/lz-principal-mobile.webp")!important}}
 </style>
 
   <script type="application/ld+json">
@@ -166,8 +329,8 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
   <div class="label">02 — MSMV</div>
   <div class="section-head"><h2>ME SUBESTIMEM<br><em>MAIS VEZES.</em></h2></div>
   <div class="flyer-grid reveal">
-    <figure class="flyer-card"><img src="assets/album/flyers/msmv-capa-oficial.jpeg" alt="Capa oficial do álbum MSMV"><figcaption>Capa oficial — MSMV</figcaption></figure>
-    <figure class="flyer-card"><img src="assets/album/flyers/msmv-tracklist-oficial.jpg" alt="Flyer original com a lista de músicas do MSMV"><figcaption>Flyer original / tracklist</figcaption></figure>
+    <figure class="flyer-card"><img src="assets/album/flyers/msmv-capa-oficial.jpeg" alt="Capa oficial do álbum MSMV" decoding="async"><figcaption>Capa oficial — MSMV</figcaption></figure>
+    <figure class="flyer-card"><img src="assets/album/flyers/msmv-tracklist-oficial.jpg" alt="Flyer original com a lista de músicas do MSMV" decoding="async"><figcaption>Flyer original / tracklist</figcaption></figure>
   </div>
   
   <div class="track-list reveal">
@@ -187,7 +350,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
       </article>
 
       <article class="track-card">
-        <div class="track-media"><img src="assets/album/covers/camisa-de-time.jpeg" alt="Capa de Camisa de Time" loading="lazy"></div>
+        <div class="track-media"><img src="assets/album/covers/camisa-de-time.jpeg" alt="Capa de Camisa de Time" loading="lazy" decoding="async"></div>
         <div class="track-meta"><span>04</span><h3>Camisa de Time</h3></div>
       </article>
 
@@ -222,7 +385,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
       </article>
 
       <article class="track-card">
-        <div class="track-media"><img src="assets/album/covers/mina-gata.jpeg" alt="Capa de Mina gata" loading="lazy"></div>
+        <div class="track-media"><img src="assets/album/covers/mina-gata.jpeg" alt="Capa de Mina gata" loading="lazy" decoding="async"></div>
         <div class="track-meta"><span>11</span><h3>Mina gata</h3></div>
       </article>
 
@@ -257,7 +420,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
       </article>
 
       <article class="track-card">
-        <div class="track-media"><img src="assets/album/covers/sonho-ingrato.jpeg" alt="Capa de Sonho Ingrato" loading="lazy"></div>
+        <div class="track-media"><img src="assets/album/covers/sonho-ingrato.jpeg" alt="Capa de Sonho Ingrato" loading="lazy" decoding="async"></div>
         <div class="track-meta"><span>18</span><h3>Sonho Ingrato</h3></div>
       </article>
 
@@ -282,7 +445,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
       </article>
 
       <article class="track-card">
-        <div class="track-media"><img src="assets/album/covers/alter-ego.jpeg" alt="Capa de Alter ego" loading="lazy"></div>
+        <div class="track-media"><img src="assets/album/covers/alter-ego.jpeg" alt="Capa de Alter ego" loading="lazy" decoding="async"></div>
         <div class="track-meta"><span>23</span><h3>Alter ego</h3></div>
       </article></div>
 </section>
@@ -294,64 +457,64 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
   
     <article class="battle-detail" id="batalha-do-olimpo">
       <div class="battle-detail-head">
-        <div class="battle-logo"><img src="assets/battles/logos/batalha-do-olimpo.jpeg" alt="Logo Batalha do Olimpo" loading="lazy"></div>
+        <div class="battle-logo"><img src="assets/battles/logos/batalha-do-olimpo.jpeg" alt="Logo Batalha do Olimpo" loading="lazy" decoding="async"></div>
         <div><span class="kicker">06 FOLHINHAS</span><h3>Batalha do Olimpo</h3></div>
       </div>
       <div class="battle-content">
         <div><h4>Melhores rimas</h4><div class="video-grid"><article class="video-card">
-          <video controls preload="metadata" playsinline poster="assets/battles/logos/batalha-do-olimpo.jpeg">
+          <video controls preload="none" playsinline poster="assets/battles/logos/batalha-do-olimpo.jpeg">
             <source src="assets/battles/videos/batalha-do-olimpo-melhores-rimas.mp4" type="video/mp4">
             Seu navegador não suporta vídeo HTML5.
           </video>
           <h4>Batalha do Olimpo - Melhores rimas</h4>
         </article></div></div>
-        <div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-olimpo-3x.jpeg" alt="Campeão Batalha do Olimpo 3x" loading="lazy"><figcaption>Campeão Batalha do Olimpo 3x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-olimpo-2x.jpeg" alt="Campeão Batalha do Olimpo 2x" loading="lazy"><figcaption>Campeão Batalha do Olimpo 2x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-olimpo-1x.jpeg" alt="Campeão Batalha do Olimpo 1x" loading="lazy"><figcaption>Campeão Batalha do Olimpo 1x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-olimpo-4x.jpeg" alt="Campeão Batalha do Olimpo 4x" loading="lazy"><figcaption>Campeão Batalha do Olimpo 4x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-olimpo-6x.jpg" alt="Lz campeão da Batalha do Olimpo em 17/08/2026" loading="lazy"><figcaption>Campeão Batalha do Olimpo 5x</figcaption></figure></div></div>
+        <div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-olimpo-3x.jpeg" alt="Campeão Batalha do Olimpo 3x" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Olimpo 3x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-olimpo-2x.jpeg" alt="Campeão Batalha do Olimpo 2x" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Olimpo 2x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-olimpo-1x.jpeg" alt="Campeão Batalha do Olimpo 1x" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Olimpo 1x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-olimpo-4x.jpeg" alt="Campeão Batalha do Olimpo 4x" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Olimpo 4x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-olimpo-6x.jpg" alt="Lz campeão da Batalha do Olimpo em 17/08/2026" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Olimpo 5x</figcaption></figure></div></div>
       </div>
     </article>
 
     <article class="battle-detail" id="batalha-da-sab">
       <div class="battle-detail-head">
-        <div class="battle-logo"><img src="assets/battles/logos/batalha-da-sab.jpeg" alt="Logo Batalha da SAB" loading="lazy"></div>
+        <div class="battle-logo"><img src="assets/battles/logos/batalha-da-sab.jpeg" alt="Logo Batalha da SAB" loading="lazy" decoding="async"></div>
         <div><span class="kicker">03 FOLHINHAS</span><h3>Batalha da SAB</h3></div>
       </div>
       <div class="battle-content">
         <div><h4>Melhores rimas</h4><div class="video-grid"><article class="video-card">
-          <video controls preload="metadata" playsinline poster="assets/battles/logos/batalha-da-sab.jpeg">
+          <video controls preload="none" playsinline poster="assets/battles/logos/batalha-da-sab.jpeg">
             <source src="assets/battles/videos/batalha-da-sab-lz-e-jc-x-paike-e-teddy.mp4" type="video/mp4">
             Seu navegador não suporta vídeo HTML5.
           </video>
           <h4>Batalha da SAB - LZ e JC x Paike e Teddy</h4>
         </article><article class="video-card">
-          <video controls preload="metadata" playsinline poster="assets/battles/logos/batalha-da-sab.jpeg">
+          <video controls preload="none" playsinline poster="assets/battles/logos/batalha-da-sab.jpeg">
             <source src="assets/battles/videos/batalha-da-sab-evento-consciencia-negra-show-do-djonga.mp4" type="video/mp4">
             Seu navegador não suporta vídeo HTML5.
           </video>
           <h4>Batalha da SAB - Evento Consciência negra - Show do Djonga</h4>
         </article></div></div>
-        <div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-da-sab-1x.jpeg" alt="Campeão Batalha da SAB 1x" loading="lazy"><figcaption>Campeão Batalha da SAB 1x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-da-sab-2x.jpeg" alt="Campeão Batalha da SAB 2x" loading="lazy"><figcaption>Campeão Batalha da SAB 2x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-da-sab-3x.jpeg" alt="Campeão Batalha da SAB 3x" loading="lazy"><figcaption>Campeão Batalha da SAB 3x</figcaption></figure></div></div>
+        <div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-da-sab-1x.jpeg" alt="Campeão Batalha da SAB 1x" loading="lazy" decoding="async"><figcaption>Campeão Batalha da SAB 1x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-da-sab-2x.jpeg" alt="Campeão Batalha da SAB 2x" loading="lazy" decoding="async"><figcaption>Campeão Batalha da SAB 2x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-da-sab-3x.jpeg" alt="Campeão Batalha da SAB 3x" loading="lazy" decoding="async"><figcaption>Campeão Batalha da SAB 3x</figcaption></figure></div></div>
       </div>
     </article>
 
     <article class="battle-detail" id="batalha-do-vem-viver">
       <div class="battle-detail-head">
-        <div class="battle-logo"><img src="assets/battles/logos/batalha-do-vem-viver.jpeg" alt="Logo Batalha do Vem Viver" loading="lazy"></div>
+        <div class="battle-logo"><img src="assets/battles/logos/batalha-do-vem-viver.jpeg" alt="Logo Batalha do Vem Viver" loading="lazy" decoding="async"></div>
         <div><span class="kicker">03 FOLHINHAS</span><h3>Batalha do Vem Viver</h3></div>
       </div>
       <div class="battle-content">
         <div><h4>Melhores rimas</h4><div class="video-grid"><article class="video-card">
-          <video controls preload="metadata" playsinline poster="assets/battles/logos/batalha-do-vem-viver.jpeg">
+          <video controls preload="none" playsinline poster="assets/battles/logos/batalha-do-vem-viver.jpeg">
             <source src="assets/battles/videos/batalha-do-vem-viver-lz-x-g15.mp4" type="video/mp4">
             Seu navegador não suporta vídeo HTML5.
           </video>
           <h4>Batalha do Vem Viver - Lz x G15</h4>
         </article></div></div>
-        <div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-vem-viver-2x.jpeg" alt="Campeão Batalha do Vem Viver 2x" loading="lazy"><figcaption>Campeão Batalha do Vem Viver 2x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-vem-viver-1x.jpeg" alt="Campeão Batalha do Vem Viver 1x" loading="lazy"><figcaption>Campeão Batalha do Vem Viver 1x</figcaption></figure></div></div>
+        <div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-vem-viver-2x.jpeg" alt="Campeão Batalha do Vem Viver 2x" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Vem Viver 2x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-vem-viver-1x.jpeg" alt="Campeão Batalha do Vem Viver 1x" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Vem Viver 1x</figcaption></figure></div></div>
       </div>
     </article>
 
     <article class="battle-detail" id="batalha-da-vrg">
       <div class="battle-detail-head">
-        <div class="battle-logo"><img src="assets/battles/logos/batalha-da-vrg.jpeg" alt="Logo Batalha da VRG" loading="lazy"></div>
+        <div class="battle-logo"><img src="assets/battles/logos/batalha-da-vrg.jpeg" alt="Logo Batalha da VRG" loading="lazy" decoding="async"></div>
         <div><span class="kicker">03 FOLHINHAS</span><h3>Batalha da VRG</h3></div>
       </div>
 
@@ -360,7 +523,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
           <h4>Melhores rimas</h4>
           <div class="video-grid">
             <article class="video-card">
-              <video controls preload="metadata" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
+              <video controls preload="none" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
                 <source src="assets/battles/videos/batalha-da-vrg-lz-x-jimrunner.mp4" type="video/mp4">
                 Seu navegador não suporta vídeo HTML5.
               </video>
@@ -368,7 +531,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
             </article>
 
             <article class="video-card">
-              <video controls preload="metadata" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
+              <video controls preload="none" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
                 <source src="assets/battles/videos/batalha-da-vrg-lz-x-destaole.mp4" type="video/mp4">
                 Seu navegador não suporta vídeo HTML5.
               </video>
@@ -376,7 +539,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
             </article>
 
             <article class="video-card">
-              <video controls preload="metadata" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
+              <video controls preload="none" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
                 <source src="assets/battles/videos/batalha-da-vrg-melhores-rimas.mp4" type="video/mp4">
                 Seu navegador não suporta vídeo HTML5.
               </video>
@@ -384,7 +547,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
             </article>
 
             <article class="video-card">
-              <video controls preload="metadata" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
+              <video controls preload="none" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
                 <source src="assets/battles/videos/vrg-melhores-rimas-1.mp4" type="video/mp4">
                 Seu navegador não suporta vídeo HTML5.
               </video>
@@ -392,7 +555,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
             </article>
 
             <article class="video-card">
-              <video controls preload="metadata" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
+              <video controls preload="none" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
                 <source src="assets/battles/videos/vrg-melhores-rimas-2.mp4" type="video/mp4">
                 Seu navegador não suporta vídeo HTML5.
               </video>
@@ -405,11 +568,11 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
           <h4>Registros de títulos</h4>
           <div class="title-grid">
             <figure class="title-shot">
-              <img src="assets/battles/titulos/campeao-batalha-da-vrg.jpeg" alt="Campeão Batalha da VRG" loading="lazy">
+              <img src="assets/battles/titulos/campeao-batalha-da-vrg.jpeg" alt="Campeão Batalha da VRG" loading="lazy" decoding="async">
               <figcaption>Campeão Batalha da VRG</figcaption>
             </figure>
             <figure class="title-shot">
-              <img src="assets/battles/titulos/campeao-batalha-da-vrg-2x.jpeg" alt="Campeão Batalha da VRG 2x" loading="lazy">
+              <img src="assets/battles/titulos/campeao-batalha-da-vrg-2x.jpeg" alt="Campeão Batalha da VRG 2x" loading="lazy" decoding="async">
               <figcaption>Campeão Batalha da VRG 2x</figcaption>
             </figure>
           </div>
@@ -419,23 +582,23 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
 
     <article class="battle-detail" id="batalha-da-chave">
       <div class="battle-detail-head">
-        <div class="battle-logo"><img src="assets/battles/logos/batalha-da-chave.jpeg" alt="Logo Batalha da Chave" loading="lazy"></div>
+        <div class="battle-logo"><img src="assets/battles/logos/batalha-da-chave.jpeg" alt="Logo Batalha da Chave" loading="lazy" decoding="async"></div>
         <div><span class="kicker">01 FOLHINHA</span><h3>Batalha da Chave</h3></div>
       </div>
       <div class="battle-content">
         <div><h4>Melhores rimas</h4><div class="video-grid"><p class="empty">Sem vídeo enviado para esta batalha.</p></div></div>
-        <div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-da-chave.jpeg" alt="Campeão Batalha da Chave" loading="lazy"><figcaption>Campeão Batalha da Chave</figcaption></figure></div></div>
+        <div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-da-chave.jpeg" alt="Campeão Batalha da Chave" loading="lazy" decoding="async"><figcaption>Campeão Batalha da Chave</figcaption></figure></div></div>
       </div>
     </article>
 
     <article class="battle-detail" id="batalha-do-morangao">
       <div class="battle-detail-head">
-        <div class="battle-logo"><img src="assets/battles/logos/batalha-do-morangao.jpeg" alt="Logo Batalha do Morangão" loading="lazy"></div>
+        <div class="battle-logo"><img src="assets/battles/logos/batalha-do-morangao.jpeg" alt="Logo Batalha do Morangão" loading="lazy" decoding="async"></div>
         <div><span class="kicker">01 FOLHINHA</span><h3>Batalha do Morangão</h3></div>
       </div>
       <div class="battle-content">
         <div><h4>Melhores rimas</h4><div class="video-grid"><p class="empty">Sem vídeo enviado para esta batalha.</p></div></div>
-        <div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-morangao.jpeg" alt="Campeão Batalha do Morangão" loading="lazy"><figcaption>Campeão Batalha do Morangão</figcaption></figure></div></div>
+        <div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-morangao.jpeg" alt="Campeão Batalha do Morangão" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Morangão</figcaption></figure></div></div>
       </div>
     </article>
 </section>
@@ -453,84 +616,84 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
     <div><b>2</b><span>estados</span></div>
   </div>
   <div class="journey-grid reveal"><article class="journey-card champion">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-olimpo.jpeg" alt="Logo Batalha do Olimpo" loading="lazy"></div>
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-olimpo.jpeg" alt="Logo Batalha do Olimpo" loading="lazy" decoding="async"></div>
       <small>CAMPEÃO 🏆</small>
       <h3>Batalha do Olimpo</h3>
       <p>📍 Bragança Paulista/SP</p>
       <p>Semanalmente • Praça Jacinto Osório (Matadouro)</p>
       <div class="journey-actions"><a class="primary-link" href="/batalhas/olimpo/">Ver informações →</a><a href="https://www.instagram.com/batalhado0limp0?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
     </article><article class="journey-card champion">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-sab.jpeg" alt="Logo Batalha da SAB" loading="lazy"></div>
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-sab.jpeg" alt="Logo Batalha da SAB" loading="lazy" decoding="async"></div>
       <small>CAMPEÃO 🏆</small>
       <h3>Batalha da SAB</h3>
       <p>📍 Extrema/MG</p>
       <p>Quinzenal • Praça Coronel Simeão</p>
       <div class="journey-actions"><a class="primary-link" href="/batalhas/sab/">Ver informações →</a><a href="https://www.instagram.com/batalhadasab?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
     </article><article class="journey-card champion">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-vem-viver.jpeg" alt="Logo Batalha do Vem Viver" loading="lazy"></div>
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-vem-viver.jpeg" alt="Logo Batalha do Vem Viver" loading="lazy" decoding="async"></div>
       <small>CAMPEÃO 🏆</small>
       <h3>Batalha do Vem Viver</h3>
       <p>📍 Bragança Paulista/SP</p>
       <p>Mensalmente • Avenida dos Limoeiros (Parque do Vem Viver)</p>
       <div class="journey-actions"><a class="primary-link" href="/batalhas/vem-viver/">Ver informações →</a><a href="https://www.instagram.com/batalhadovemviver?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
     </article><article class="journey-card champion">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-vrg.jpeg" alt="Logo Batalha da VRG" loading="lazy"></div>
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-vrg.jpeg" alt="Logo Batalha da VRG" loading="lazy" decoding="async"></div>
       <small>CAMPEÃO 🏆</small>
       <h3>Batalha da VRG</h3>
       <p>📍 Vargem/SP</p>
       <p>Semanalmente • Lago de Vargem</p>
       <div class="journey-actions"><a class="primary-link" href="/batalhas/vrg/">Ver informações →</a><a href="https://www.instagram.com/bata_lhadavrg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
     </article><article class="journey-card champion">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-chave.jpeg" alt="Logo Batalha da Chave" loading="lazy"></div>
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-chave.jpeg" alt="Logo Batalha da Chave" loading="lazy" decoding="async"></div>
       <small>CAMPEÃO 🏆</small>
       <h3>Batalha da Chave</h3>
       <p>📍 Extrema/MG</p>
       <p>Quinzenal • Parque de Eventos</p>
       <div class="journey-actions"><a class="primary-link" href="/batalhas/chave/">Ver informações →</a><a href="https://www.instagram.com/batalha_da_chave?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
     </article><article class="journey-card champion">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-morangao.jpeg" alt="Logo Batalha do Morangão" loading="lazy"></div>
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-morangao.jpeg" alt="Logo Batalha do Morangão" loading="lazy" decoding="async"></div>
       <small>CAMPEÃO 🏆</small>
       <h3>Batalha do Morangão</h3>
       <p>📍 Águas de Lindóia/SP</p>
       <p>Mensalmente • Pista de Skate da Popular</p>
       <div class="journey-actions"><a class="primary-link" href="/batalhas/morangao/">Ver informações →</a><a href="https://www.instagram.com/batalhadamorangao?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
     </article><article class="journey-card">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-parque.png" alt="Logo Batalha do Parque" loading="lazy"></div>
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-parque.png" alt="Logo Batalha do Parque" loading="lazy" decoding="async"></div>
       <small>PARTICIPAÇÃO</small>
       <h3>Batalha do Parque</h3>
       <p>📍 Bragança Paulista/SP</p>
       <p>Mensalmente • Praça Narciso Pinheiro</p>
       <div class="journey-actions"><a class="primary-link" href="/batalhas/parque/">Ver informações →</a><a href="https://www.instagram.com/batalha_do_parque_zn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
     </article><article class="journey-card">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-home.png" alt="Logo Batalha da Home" loading="lazy"></div>
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-home.png" alt="Logo Batalha da Home" loading="lazy" decoding="async"></div>
       <small>PARTICIPAÇÃO</small>
       <h3>Batalha da Home</h3>
       <p>📍 Campinas/SP</p>
       <p>Quinzenal • Praça João Da Cruz Prates</p>
       <div class="journey-actions"><a class="primary-link" href="/batalhas/home/">Ver informações →</a><a href="https://www.instagram.com/batalhadahome?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
     </article><article class="journey-card">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-coreto.png" alt="Logo Batalha do Coreto" loading="lazy"></div>
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-coreto.png" alt="Logo Batalha do Coreto" loading="lazy" decoding="async"></div>
       <small>PARTICIPAÇÃO</small>
       <h3>Batalha do Coreto</h3>
       <p>📍 Itapira/SP</p>
       <p>Semanalmente • Coreto do Parque Juca Mulato</p>
       <div class="journey-actions"><a class="primary-link" href="/batalhas/coreto/">Ver informações →</a><a href="https://www.instagram.com/bdcoreto019?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
     </article><article class="journey-card">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-joker.png" alt="Logo Batalha da Joker" loading="lazy"></div>
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-joker.png" alt="Logo Batalha da Joker" loading="lazy" decoding="async"></div>
       <small>PARTICIPAÇÃO</small>
       <h3>Batalha da Joker</h3>
       <p>📍 Atibaia/SP</p>
       <p>Quinzenal • CC / Lago do Major</p>
       <div class="journey-actions"><a class="primary-link" href="/batalhas/joker/">Ver informações →</a><a href="https://www.instagram.com/bdj_011?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
     </article><article class="journey-card">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-imperio.png" alt="Logo Batalha do Império" loading="lazy"></div>
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-imperio.png" alt="Logo Batalha do Império" loading="lazy" decoding="async"></div>
       <small>PARTICIPAÇÃO</small>
       <h3>Batalha do Império</h3>
       <p>📍 Atibaia/SP</p>
       <p>Mensalmente • Jardim Imperial</p>
       <div class="journey-actions"><a class="primary-link" href="/batalhas/imperio/">Ver informações →</a><a href="https://www.instagram.com/imperio.crew?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
     </article><article class="journey-card">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-melodias.png" alt="Logo Batalha da Melodias" loading="lazy"></div>
+      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-melodias.png" alt="Logo Batalha da Melodias" loading="lazy" decoding="async"></div>
       <small>PARTICIPAÇÃO</small>
       <h3>Batalha da Melodias</h3>
       <p>📍 Bragança Paulista/SP</p>
@@ -702,7 +865,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
 
   <article class="event-feature reveal">
     <div>
-      <video controls preload="metadata" playsinline>
+      <video controls preload="none" playsinline>
         <source src="assets/battles/videos/batalha-da-sab-evento-consciencia-negra-show-do-djonga.mp4" type="video/mp4">
         Seu navegador não suporta vídeo HTML5.
       </video>
@@ -715,7 +878,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
   </article>
 
   <article class="event-secondary reveal">
-    <img src="assets/events/apresentacao-antimisoginia-sesi-012.jpeg" alt="Apresentação sobre antimisoginia no SESI-012 em Bragança Paulista" loading="lazy">
+    <img src="assets/events/apresentacao-antimisoginia-sesi-012.jpeg" alt="Apresentação sobre antimisoginia no SESI-012 em Bragança Paulista" loading="lazy" decoding="async">
     <div class="event-secondary-copy">
       <span class="event-badge">APRESENTAÇÃO</span>
       <h3>ANTIMISOGINIA NO SESI-012</h3>
@@ -728,7 +891,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
 <section class="section alt" id="galeria">
   <div class="label">06 — GALERIA</div>
   <div class="section-head"><h2>LZ<br><em>NO PALCO.</em></h2></div>
-  <div class="gallery-grid reveal"><button class="gallery-item" data-src="assets/photos/lz-principal.jpg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-principal.jpg" alt="Lz no palco e em batalhas" loading="lazy"></button><button class="gallery-item" data-src="assets/photos/lz-palco-1.jpg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-palco-1.jpg" alt="Lz no palco e em batalhas" loading="lazy"></button><button class="gallery-item" data-src="assets/photos/lz-palco-2.jpg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-palco-2.jpg" alt="Lz no palco e em batalhas" loading="lazy"></button><button class="gallery-item" data-src="assets/photos/lz-batalha-1.jpeg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-batalha-1.jpeg" alt="Lz no palco e em batalhas" loading="lazy"></button><button class="gallery-item" data-src="assets/photos/lz-batalha-2.jpeg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-batalha-2.jpeg" alt="Lz no palco e em batalhas" loading="lazy"></button><button class="gallery-item" data-src="assets/photos/lz-batalha-3.jpeg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-batalha-3.jpeg" alt="Lz no palco e em batalhas" loading="lazy"></button><button class="gallery-item" data-src="assets/photos/lz-batalha-4.jpeg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-batalha-4.jpeg" alt="Lz no palco e em batalhas" loading="lazy"></button><button class="gallery-item" data-src="assets/photos/lz-batalha-5.jpeg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-batalha-5.jpeg" alt="Lz no palco e em batalhas" loading="lazy"></button></div>
+  <div class="gallery-grid reveal"><button class="gallery-item" data-src="assets/photos/lz-principal.jpg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-principal.jpg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button><button class="gallery-item" data-src="assets/photos/lz-palco-1.jpg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-palco-1.jpg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button><button class="gallery-item" data-src="assets/photos/lz-palco-2.jpg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-palco-2.jpg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button><button class="gallery-item" data-src="assets/photos/lz-batalha-1.jpeg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-batalha-1.jpeg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button><button class="gallery-item" data-src="assets/photos/lz-batalha-2.jpeg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-batalha-2.jpeg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button><button class="gallery-item" data-src="assets/photos/lz-batalha-3.jpeg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-batalha-3.jpeg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button><button class="gallery-item" data-src="assets/photos/lz-batalha-4.jpeg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-batalha-4.jpeg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button><button class="gallery-item" data-src="assets/photos/lz-batalha-5.jpeg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-batalha-5.jpeg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button></div>
 </section>
 
 <section class="section" id="contato">
@@ -762,7 +925,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
 
 <footer><span>© 2026 LZ — SITE OFICIAL</span><span>MSMV • BATALHAS • BRAGANÇA PAULISTA</span></footer>
 <a class="top-btn" id="topBtn" href="#inicio" aria-label="Voltar ao topo">↑</a>
-<div class="lightbox" id="lightbox"><button id="lightboxClose" aria-label="Fechar">×</button><img id="lightboxImg" alt="Foto ampliada do Lz"></div>
+<div class="lightbox" id="lightbox"><button id="lightboxClose" aria-label="Fechar">×</button><img id="lightboxImg" alt="Foto ampliada do Lz" decoding="async"></div>
 
 <script>
 const menuBtn=document.getElementById('menuBtn'), mobileNav=document.getElementById('mobileNav');
@@ -777,4 +940,66 @@ document.querySelectorAll('.gallery-item').forEach(btn=>btn.addEventListener('cl
 function closeLb(){lb.classList.remove('open');document.body.style.overflow='';lbImg.src=''}
 document.getElementById('lightboxClose').addEventListener('click',closeLb);lb.addEventListener('click',e=>{if(e.target===lb)closeLb()});addEventListener('keydown',e=>{if(e.key==='Escape')closeLb()});
 </script>
+
+<script id="lz-mobile-performance">
+(function(){
+  const isMobile = () => window.matchMedia('(max-width:780px)').matches;
+
+  // Vídeos: não baixar metadados/arquivos pesados antes do usuário pedir.
+  document.querySelectorAll('video').forEach(v => {
+    v.preload = 'none';
+    v.setAttribute('preload','none');
+    v.setAttribute('playsinline','');
+  });
+
+  // Imagens fora da primeira dobra: lazy + decode assíncrono.
+  document.querySelectorAll('img').forEach((img, i) => {
+    img.decoding = 'async';
+    if(i > 1 && !img.hasAttribute('loading')) img.loading = 'lazy';
+  });
+
+  // No celular, batalhas detalhadas começam recolhidas.
+  if(isMobile()){
+    document.querySelectorAll('.battle-detail').forEach((battle, index) => {
+      const head = battle.querySelector('.battle-detail-head');
+      const content = battle.querySelector('.battle-content');
+      if(!head || !content || head.querySelector('.mobile-battle-toggle')) return;
+
+      battle.classList.add('mobile-collapsed');
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'mobile-battle-toggle';
+      btn.setAttribute('aria-label','Abrir detalhes da batalha');
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent = '+';
+      head.appendChild(btn);
+
+      const toggle = () => {
+        const closed = battle.classList.toggle('mobile-collapsed');
+        btn.setAttribute('aria-expanded', String(!closed));
+        btn.setAttribute('aria-label', closed ? 'Abrir detalhes da batalha' : 'Fechar detalhes da batalha');
+      };
+      btn.addEventListener('click', e => { e.stopPropagation(); toggle(); });
+      head.addEventListener('click', e => {
+        if(e.target.closest('a')) return;
+        toggle();
+      });
+    });
+  }
+
+  // Menu trava o fundo para ficar estável no celular.
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  if(menuBtn && mobileNav){
+    const syncScroll = () => {
+      document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    };
+    menuBtn.addEventListener('click', () => setTimeout(syncScroll,0));
+    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      document.body.style.overflow='';
+    }));
+  }
+})();
+</script>
+
 </body></html>
