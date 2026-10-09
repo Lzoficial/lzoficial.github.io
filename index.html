@@ -27,7 +27,7 @@ img,video{max-width:100%}a{color:inherit;text-decoration:none}button{font:inheri
 .hero{min-height:100svh;position:relative;display:flex;align-items:flex-end;padding:0 8vw 9vh;background:#111 url("assets/photos/lz-principal.jpg") 68% center/cover no-repeat}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#080808 2%,rgba(8,8,8,.72) 45%,rgba(8,8,8,.15)),linear-gradient(0deg,#080808 0%,transparent 62%)}.hero-copy{position:relative;z-index:2;max-width:920px}.eyebrow,.label,.kicker{font-size:10px;letter-spacing:3px;font-weight:800;color:var(--lime);text-transform:uppercase}.hero h1,.display{font-family:Impact,"Arial Black",sans-serif;text-transform:uppercase;letter-spacing:-.04em}.hero h1{font-size:clamp(110px,25vw,350px);line-height:.72;margin:22px 0 36px}.hero-sub{font:clamp(28px,5vw,64px)/.9 Impact,"Arial Black",sans-serif;text-transform:uppercase;max-width:760px}.hero-desc{max-width:650px;color:#c4c0b8;line-height:1.65;font-size:17px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border:1px solid #555;text-transform:uppercase;font-size:10px;letter-spacing:1.5px;font-weight:800}.btn.primary{background:var(--lime);color:#000;border-color:var(--lime)}
 .section{padding:120px 8vw;border-top:1px solid var(--line)}.section.alt{background:var(--bg2)}.section-head{display:grid;grid-template-columns:1.35fr .65fr;gap:8vw;align-items:end;margin:34px 0 58px}.section h2{font:clamp(62px,9vw,138px)/.82 Impact,"Arial Black",sans-serif;text-transform:uppercase;letter-spacing:-.04em;margin:0}.section h2 em{font-style:normal;color:#666}.section-intro{color:var(--muted);line-height:1.7;max-width:560px}
 .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:9vw;align-items:start}.about-lead{font-size:clamp(24px,3vw,39px);line-height:1.17;margin:0 0 28px;font-weight:700}.about-copy p{color:#aaa69d;line-height:1.8;margin:0 0 18px}.about-points{display:grid;gap:12px}.about-point{border:1px solid var(--line);background:#0b0b0b;padding:22px}.about-point b{display:block;font:28px Impact,"Arial Black",sans-serif;text-transform:uppercase;margin-bottom:8px}.about-point p{margin:0;color:#858179;line-height:1.55}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #444;margin-top:60px}.stat{padding:30px 20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.stat b{display:block;font:58px Impact,"Arial Black",sans-serif}.stat span{font-size:9px;letter-spacing:2px;color:#78746c;text-transform:uppercase}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid #444;margin-top:60px}.stat{padding:30px 20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.stat b{display:block;font:58px Impact,"Arial Black",sans-serif}.stat span{font-size:9px;letter-spacing:2px;color:#78746c;text-transform:uppercase}
 .flyer-grid{display:grid;grid-template-columns:.9fr 1.2fr;gap:30px;align-items:start;margin-bottom:72px}.flyer-card{margin:0;background:#0b0b0b;border:1px solid var(--line);padding:10px}.flyer-card img{width:100%;display:block}.flyer-card figcaption{font-size:9px;letter-spacing:2px;color:#777;padding:14px 6px 5px;text-transform:uppercase}
 .album-note{padding:18px 20px;border-left:3px solid var(--lime);background:#0d0d0d;color:#aaa;font-size:12px;line-height:1.65;margin-bottom:34px}.track-list{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}.track-card{display:grid;grid-template-columns:74px 1fr;gap:14px;align-items:center;background:#080808;padding:11px;min-height:96px}.track-media{width:74px;height:74px;background:#121212;overflow:hidden}.track-media img{width:100%;height:100%;object-fit:cover;display:block}.track-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font:27px Impact,"Arial Black",sans-serif;color:#454545;background:linear-gradient(135deg,#151515,#090909)}.track-meta span{display:block;color:#5e5b55;font-size:9px;letter-spacing:2px}.track-meta h3{margin:6px 0 0;font-size:15px}
 .battle-summary{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:72px}.battle-summary a{background:#0a0a0a;padding:25px 14px;min-height:140px}.battle-summary strong{display:block;font:52px Impact,"Arial Black",sans-serif}.battle-summary span{font-size:12px;line-height:1.4}.battle-summary small{display:block;margin-top:8px;color:#777;text-transform:uppercase;letter-spacing:1px}
@@ -318,10 +318,11 @@ video{background:#000}
     </div>
   </div>
   <div class="stats reveal">
+    <div class="stat"><b>20</b><span>títulos</span></div>
     <div class="stat"><b>24</b><span>faixas no MSMV</span></div>
     <div class="stat"><b>19</b><span>folhinhas</span></div>
     <div class="stat"><b>+7K</b><span>pessoas no show do Djonga</span></div>
-    <div class="stat"><b>38</b><span>registros em 2026</span></div>
+    <div class="stat"><b>45</b><span>registros em 2026</span></div>
   </div>
 </section>
 
@@ -574,7 +575,14 @@ video{background:#000}
               <h4>Batalha da VRG - Melhores rimas</h4>
             </article>
 </div>
-        </div>
+        
+            <article class="video-card">
+              <video controls preload="none" playsinline poster="assets/battles/titulos/campeao-batalha-da-vrg-3x.jpg">
+                <source src="assets/battles/videos/batalha-da-vrg-campeao-27-09.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo HTML5.
+              </video>
+              <h4>Batalha da VRG - Melhores rimas</h4>
+            </article></div>
 
         <div>
           <h4>Registros de títulos</h4>
@@ -717,7 +725,7 @@ video{background:#000}
 <section class="section alt" id="2026">
   <div class="label">04 — TEMPORADA 2026</div>
   <div class="section-head"><h2>BATALHAS<br><em>2026.</em></h2></div>
-  <div class="year-stats"><div class="year-stat"><b>38</b><span>registros em 2026</span></div></div>
+  <div class="year-stats"><div class="year-stat"><b>45</b><span>registros em 2026</span></div></div>
   <div class="months reveal"><section class="month-card"><h3>Janeiro</h3><div class="event-row champ">
           <time>10/01</time>
           <strong>Batalha do vem viver</strong>
@@ -856,33 +864,28 @@ video{background:#000}
 </section>
 
 <section class="month-card"><h3>Setembro</h3>
+  <div class="event-row"><time>02/09</time><strong>Batalha do Parque</strong><span>2º fase</span></div>
+  <div class="event-row"><time>03/09</time><strong>Batalha do Olimpo</strong><span>Semifinal</span></div>
+  <div class="event-row"><time>05/09</time><strong>Batalha do Forte</strong><span>Semifinal</span></div>
+  <div class="event-row"><time>11/09</time><strong>Batalha da VRG</strong><span>Final</span></div>
+  <div class="event-row"><time>12/09</time><strong>Pré-Regional do Olimpo</strong><span>2º fase</span></div>
+  <div class="event-row"><time>19/09</time><strong>Copa DiRaiz</strong><span>Semifinal</span></div>
+  <div class="event-row"><time>20/09</time><strong>Pré-Regional da SAB</strong><span>2º fase</span></div>
+  <div class="event-row"><time>25/09</time><strong>Batalha da SAB dupla</strong><span>Semifinal</span></div>
+  <div class="event-row"><time>26/09</time><strong>Aniversário Olimpo trio</strong><span>1ª fase</span></div>
+  <div class="event-row champ"><time>27/09</time><strong>Batalha da VRG</strong><span>Campeão 🏆</span></div>
+  <div class="event-row"><time>30/09</time><strong>Batalha da SAB</strong><span>2º fase</span></div>
+</section>
+<section class="month-card"><h3>Outubro</h3>
+  <div class="event-row"><time>02/10</time><strong>Batalha da VRG</strong><span>Semifinal</span></div>
   <div class="event-row">
-    <time>02/09</time>
-    <strong>Batalha do Parque</strong>
-    <span>2ª fase</span>
-  </div>
-  <div class="event-row">
-    <time>03/09</time>
-    <strong>Batalha do Olimpo</strong>
-    <span>Semifinal</span>
+    <time>07/10</time>
+    <strong>Batalha da SAB dupla</strong>
+    <span>1ª fase</span>
   </div>
 
-  <div class="event-row">
-    <time>05/09</time>
-    <strong>Batalha do Forte</strong>
-    <span>Semifinal</span>
-  </div>
-  <div class="event-row">
-    <time>11/09</time>
-    <strong>Batalha da VRG</strong>
-    <span>Final</span>
-  </div>
-  <div class="event-row">
-    <time>12/09</time>
-    <strong>Pré-Regional do Olimpo</strong>
-    <span>2ª fase</span>
-  </div>
-</section></div>
+</section>
+</div>
 </section>
 
 
