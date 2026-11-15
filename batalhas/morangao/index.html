@@ -1,11 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
 <title>Batalha do Morangão | Lz | Lz Oficial</title>
-<meta name="description" content="Batalha do Morangão — Águas de Lindóia/SP. Informações, frequência, local e trajetória do Lz.">
-<link rel="canonical" href="https://lzoficial.com/batalhas/morangao/">
+<meta content="Batalha do Morangão — Águas de Lindóia/SP. Informações, frequência, local e trajetória do Lz." name="description"/>
+<link href="https://lzoficial.com/batalhas/morangao/" rel="canonical"/>
 <style>
 :root{--bg:#080808;--bg2:#0d0d0d;--fg:#f4f1ea;--muted:#9b978e;--line:#2a2a2a;--lime:#d9ff00;--gold:#b48b43}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
@@ -254,48 +255,53 @@ video{background:#000}
 }
 
 @media(max-width:780px){.hero{background-image:url("/assets/photos/lz-principal-mobile.webp")!important}}
+
+/* Galeria compacta: vídeos em grade responsiva, com capas padronizadas */
+.battle-content{grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:24px}
+.battle-content .video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.battle-content .video-card{min-width:0;overflow:hidden;border-radius:8px}
+.battle-content .video-card video{width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;max-height:none;background:#050505}
+.battle-content .video-card h4{font-size:11px;padding:10px 12px;line-height:1.4}
+@media(max-width:900px){.battle-content{grid-template-columns:1fr;gap:26px}}
+@media(max-width:520px){.battle-content .video-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.battle-content .video-card h4{font-size:10px;padding:8px}.battle-content .title-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon-48x48.png" type="image/png" sizes="48x48">
-<link rel="icon" href="/favicon-192x192.png" type="image/png" sizes="192x192">
-<link rel="apple-touch-icon" href="/favicon-192x192.png">
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="/favicon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="/favicon-192x192.png" rel="apple-touch-icon"/>
 </head>
 <body>
 <header class="header">
-  <a class="brand" href="/">L<b>Z</b></a>
-  <nav class="desktop-nav"><a href="/">Início</a><a href="/sobre/">Sobre</a><a href="/msmv/">MSMV</a><a href="/batalhas/">Batalhas</a><a href="/#contato">Contato</a></nav>
-  <button class="menu-btn" id="menuBtn">MENU</button>
+<a class="brand" href="/">L<b>Z</b></a>
+<nav class="desktop-nav"><a href="/">Início</a><a href="/sobre/">Sobre</a><a href="/msmv/">MSMV</a><a href="/batalhas/">Batalhas</a><a href="/#contato">Contato</a></nav>
+<button class="menu-btn" id="menuBtn">MENU</button>
 </header>
 <nav class="mobile-nav" id="mobileNav"><a href="/">Início</a><a href="/sobre/">Sobre</a><a href="/msmv/">MSMV</a><a href="/batalhas/">Batalhas</a><a href="/#contato">Contato</a></nav>
-
 <section class="page-hero">
-  <div>
-    <div class="breadcrumb"><a href="/">Lz</a> / <a href="/batalhas/">Batalhas</a> / Batalha do Morangão</div>
-    <div class="battle-info-hero">
-      <div class="battle-info-logo"><img src="../../assets/battles/logos/batalha-do-morangao.jpeg" alt="Logo Batalha do Morangão" decoding="async"></div>
-      <div><div class="label">1 folhinha</div><h1>Batalha do Morangão</h1></div>
-    </div>
-  </div>
+<div>
+<div class="breadcrumb"><a href="/">Lz</a> / <a href="/batalhas/">Batalhas</a> / Batalha do Morangão</div>
+<div class="battle-info-hero">
+<div class="battle-info-logo"><img alt="Logo Batalha do Morangão" decoding="async" src="../../assets/battles/logos/batalha-do-morangao.jpeg"/></div>
+<div><div class="label">1 folhinha</div><h1>Batalha do Morangão</h1></div>
+</div>
+</div>
 </section>
-
 <section class="content-block">
-  <h2>INFORMAÇÕES</h2>
-  <div class="info-grid">
-    <div class="info-box"><small>CIDADE</small><b>Águas de Lindóia/SP</b></div>
-    <div class="info-box"><small>QUANDO ACONTECE</small><b>Mensalmente</b></div>
-    <div class="info-box"><small>LOCAL</small><b>Pista de Skate da Popular</b></div>
-  </div>
-  <a class="ig-link" href="https://www.instagram.com/batalhadamorangao?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Batalha do Morangão ↗</a>
-  <div class="page-footer-links"><a class="btn" href="/batalhas/">Voltar para batalhas</a></div>
+<h2>INFORMAÇÕES</h2>
+<div class="info-grid">
+<div class="info-box"><small>CIDADE</small><b>Águas de Lindóia/SP</b></div>
+<div class="info-box"><small>QUANDO ACONTECE</small><b>Mensalmente</b></div>
+<div class="info-box"><small>LOCAL</small><b>Pista de Skate da Popular</b></div>
+</div>
+<a class="ig-link" href="https://www.instagram.com/batalhadamorangao?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noopener" target="_blank">Batalha do Morangão ↗</a>
+<div class="page-footer-links"><a class="btn" href="/batalhas/">Voltar para batalhas</a></div>
 </section>
-
-<footer><span>© 2026 LZ — SITE OFICIAL</span><span>Batalha do Morangão • Águas de Lindóia/SP</span></footer>
+<section class="content-block"><h2>REGISTROS DO MORANGÃO</h2><div class="battle-content"><div><h4>Melhores rimas</h4><div class="video-grid"><article class="video-card"><video controls="" playsinline="" poster="../../assets/battles/logos/batalha-do-morangao.jpeg" preload="none"><source src="../../assets/battles/videos/morangao-melhores-rimas-novembro-2026.mp4" type="video/mp4"/></video><h4>Batalha da Morangão - Melhores rimas</h4></article></div></div><div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img alt="Batalha do Morangão 1x" decoding="async" loading="lazy" src="../../assets/battles/titulos/campeao-batalha-do-morangao.jpeg"/><figcaption>Batalha do Morangão 1x</figcaption></figure></div></div></div></section><footer><span>© 2026 LZ — SITE OFICIAL</span><span>Batalha do Morangão • Águas de Lindóia/SP</span></footer>
 <script>
 const menuBtn=document.getElementById('menuBtn'), mobileNav=document.getElementById('mobileNav');
 menuBtn.addEventListener('click',()=>mobileNav.classList.toggle('open'));
 mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileNav.classList.remove('open')));
 </script>
-
 <script id="lz-mobile-performance">
 (function(){
   const isMobile = () => window.matchMedia('(max-width:780px)').matches;
@@ -356,5 +362,4 @@ mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobile
   }
 })();
 </script>
-
 </body></html>

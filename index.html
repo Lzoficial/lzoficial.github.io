@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
- 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WQ61MLJWYP"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-WQ61MLJWYP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -11,23 +11,20 @@
 
   gtag('config', 'G-WQ61MLJWYP');
 </script>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
 <title>Lz Oficial | Rap, Trap e Batalhas de Rima</title>
-<meta name="description" content="Site oficial do Lz, MC e artista de Bragança Paulista. Conheça MSMV — Me Subestimem Mais Vezes, músicas, batalhas de rima, vídeos, títulos e trajetória.">
-<link rel="canonical" href="https://lzoficial.com/">
-<meta name="theme-color" content="#080808">
-
-<meta property="og:site_name" content="Lz Oficial">
-<meta property="og:title" content="Lz — Site Oficial | MSMV">
-<meta property="og:description" content="MSMV — Me Subestimem Mais Vezes, músicas, batalhas de rima, vídeos, títulos e trajetória do Lz.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://lzoficial.com/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Lz — Site Oficial | MSMV">
-<meta name="twitter:description" content="Site oficial do Lz: MSMV, músicas, batalhas de rima, vídeos, títulos e trajetória.">
-
+<meta content="Site oficial do Lz, MC e artista de Bragança Paulista. Conheça MSMV — Me Subestimem Mais Vezes, músicas, batalhas de rima, vídeos, títulos e trajetória." name="description"/>
+<link href="https://lzoficial.com/" rel="canonical"/>
+<meta content="#080808" name="theme-color"/>
+<meta content="Lz Oficial" property="og:site_name"/>
+<meta content="Lz — Site Oficial | MSMV" property="og:title"/>
+<meta content="MSMV — Me Subestimem Mais Vezes, músicas, batalhas de rima, vídeos, títulos e trajetória do Lz." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://lzoficial.com/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Lz — Site Oficial | MSMV" name="twitter:title"/>
+<meta content="Site oficial do Lz: MSMV, músicas, batalhas de rima, vídeos, títulos e trajetória." name="twitter:description"/>
 <style>
 :root{--bg:#080808;--bg2:#0d0d0d;--fg:#f4f1ea;--muted:#9b978e;--line:#2a2a2a;--lime:#d9ff00;--gold:#b48b43}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
@@ -270,9 +267,17 @@ video{background:#000}
 }
 
 @media(max-width:780px){.hero{background-image:url("/assets/photos/lz-principal-mobile.webp")!important}}
-</style>
 
-  <script type="application/ld+json">
+/* Galeria compacta: vídeos em grade responsiva, com capas padronizadas */
+.battle-content{grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:24px}
+.battle-content .video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.battle-content .video-card{min-width:0;overflow:hidden;border-radius:8px}
+.battle-content .video-card video{width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;max-height:none;background:#050505}
+.battle-content .video-card h4{font-size:11px;padding:10px 12px;line-height:1.4}
+@media(max-width:900px){.battle-content{grid-template-columns:1fr;gap:26px}}
+@media(max-width:520px){.battle-content .video-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.battle-content .video-card h4{font-size:10px;padding:8px}.battle-content .title-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -284,696 +289,636 @@ video{background:#000}
   ]
 }
 </script>
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon-48x48.png" type="image/png" sizes="48x48">
-<link rel="icon" href="/favicon-192x192.png" type="image/png" sizes="192x192">
-<link rel="apple-touch-icon" href="/favicon-192x192.png">
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="/favicon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="/favicon-192x192.png" rel="apple-touch-icon"/>
 </head>
 <body>
 <header class="header">
-  <a class="brand" href="#inicio">L<b>Z</b></a>
-  <nav class="desktop-nav">
-    <a href="/sobre/">Sobre</a><a href="/msmv/">MSMV</a><a href="/batalhas/">Batalhas</a><a href="/batalhas/#temporada-2026">2026</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a>
-  </nav>
-  <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">MENU</button>
+<a class="brand" href="#inicio">L<b>Z</b></a>
+<nav class="desktop-nav">
+<a href="/sobre/">Sobre</a><a href="/msmv/">MSMV</a><a href="/batalhas/">Batalhas</a><a href="/batalhas/#temporada-2026">2026</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a>
+</nav>
+<button aria-label="Abrir menu" class="menu-btn" id="menuBtn">MENU</button>
 </header>
 <nav class="mobile-nav" id="mobileNav">
-  <a href="/sobre/">Sobre o Lz</a><a href="/msmv/">MSMV</a><a href="/batalhas/">Batalhas</a><a href="/batalhas/#temporada-2026">Batalhas 2026</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a>
+<a href="/sobre/">Sobre o Lz</a><a href="/msmv/">MSMV</a><a href="/batalhas/">Batalhas</a><a href="/batalhas/#temporada-2026">Batalhas 2026</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a>
 </nav>
-
 <main>
 <section class="hero" id="inicio">
-  <div class="hero-copy">
-    <div class="eyebrow">Bragança Paulista • MC • Artista</div>
-    <h1>LZ</h1>
-    <div class="hero-sub">Da batalha para o palco.<br>Do palco para o MSMV.</div>
-    <p class="hero-desc">Rap, improviso, composição e uma trajetória construída verso a verso. Este é o arquivo oficial da caminhada do Lz.</p>
-    <div class="hero-actions"><a class="btn primary" href="#sobre">Conhecer o Lz</a><a class="btn" href="#msmv">Ver MSMV</a></div>
-  </div>
-</section>
-
-<section class="section" id="sobre">
-  <div class="label">01 — APRESENTAÇÃO</div>
-  <div class="section-head"><h2>QUEM É<br><em>O LZ?</em></h2></div>
-  <div class="about-grid reveal">
-    <div class="about-copy">
-      <p class="about-lead">Lz é um artista e MC de 17 anos, nascido e criado em Bragança Paulista, São Paulo.</p>
-      <p>Carregando a vivência do interior paulista para o microfone, constrói uma identidade própria unindo a energia das ruas com uma escrita direta, ambição e personalidade.</p>
-      <p>Nas batalhas de rima, desenvolveu improviso, agilidade mental, presença de palco e conexão com a cultura underground. No estúdio, essa experiência se transforma em composição e em um repertório que atravessa rap, trap e texturas melódicas.</p>
-      <p>O projeto <b>MSMV — Me Subestimem Mais Vezes</b> funciona como manifesto: 24 faixas sobre vivências, superações, ambições e a realidade de quem constrói o próprio caminho na música independente.</p>
-    </div>
-    <div class="about-points">
-      <div class="about-point"><b>Batalhas</b><p>Improviso, punchlines, versatilidade e presença diante do público.</p></div>
-      <div class="about-point"><b>MSMV</b><p>24 faixas com o mesmo peso dentro da obra — nenhuma tratada como “a melhor”.</p></div>
-      <div class="about-point"><b>Visão</b><p>Bragança Paulista no mapa, carreira construída no corre e evolução constante dentro e fora da roda.</p></div>
-    </div>
-  </div>
-  <div class="stats reveal">
-    <div class="stat"><b>20</b><span>títulos</span></div>
-    <div class="stat"><b>24</b><span>faixas no MSMV</span></div>
-    <div class="stat"><b>20</b><span>folhinhas</span></div>
-    <div class="stat"><b>+7K</b><span>pessoas no show do Djonga</span></div>
-    <div class="stat"><b>46</b><span>registros em 2026</span></div>
-  </div>
-</section>
-
-<section class="section alt" id="msmv">
-  <div class="label">02 — MSMV</div>
-  <div class="section-head"><h2>ME SUBESTIMEM<br><em>MAIS VEZES.</em></h2></div>
-  <div class="flyer-grid reveal">
-    <figure class="flyer-card"><img src="assets/album/flyers/msmv-capa-oficial.jpeg" alt="Capa oficial do álbum MSMV" decoding="async"><figcaption>Capa oficial — MSMV</figcaption></figure>
-    <figure class="flyer-card"><img src="assets/album/flyers/msmv-tracklist-24-faixas.jpg" alt="Flyer original com a lista de músicas do MSMV" decoding="async"><figcaption>Flyer original / tracklist</figcaption></figure>
-  </div>
-  
-  <div class="track-list reveal">
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">01</div></div>
-        <div class="track-meta"><span>01</span><h3>Rico Demais</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">02</div></div>
-        <div class="track-meta"><span>02</span><h3>Luta Diária</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">03</div></div>
-        <div class="track-meta"><span>03</span><h3>Demorou pra acontecer</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><img src="assets/album/covers/camisa-de-time.jpeg" alt="Capa de Camisa de Time" loading="lazy" decoding="async"></div>
-        <div class="track-meta"><span>04</span><h3>Camisa de Time</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">05</div></div>
-        <div class="track-meta"><span>05</span><h3>Sorte Jamais</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">06</div></div>
-        <div class="track-meta"><span>06</span><h3>Me conhecem como Lz</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">07</div></div>
-        <div class="track-meta"><span>07</span><h3>Obrigado Por Existir</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">08</div></div>
-        <div class="track-meta"><span>08</span><h3>Reach Me</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">09</div></div>
-        <div class="track-meta"><span>09</span><h3>Haters</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">10</div></div>
-        <div class="track-meta"><span>10</span><h3>Rap</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><img src="assets/album/covers/mina-gata.jpeg" alt="Capa de Mina gata" loading="lazy" decoding="async"></div>
-        <div class="track-meta"><span>11</span><h3>Mina gata</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">12</div></div>
-        <div class="track-meta"><span>12</span><h3>Transparência</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">13</div></div>
-        <div class="track-meta"><span>13</span><h3>Certeza que é o mesmo?</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">14</div></div>
-        <div class="track-meta"><span>14</span><h3>Escolhas</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">15</div></div>
-        <div class="track-meta"><span>15</span><h3>Sentimentos</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">16</div></div>
-        <div class="track-meta"><span>16</span><h3>Noite Cinzenta</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">17</div></div>
-        <div class="track-meta"><span>17</span><h3>2008</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><img src="assets/album/covers/sonho-ingrato.jpeg" alt="Capa de Sonho Ingrato" loading="lazy" decoding="async"></div>
-        <div class="track-meta"><span>18</span><h3>Sonho Ingrato</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">19</div></div>
-        <div class="track-meta"><span>19</span><h3>Morena Enloirada</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">20</div></div>
-        <div class="track-meta"><span>20</span><h3>Projeto Trapstar</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">21</div></div>
-        <div class="track-meta"><span>21</span><h3>Além da razão</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">22</div></div>
-        <div class="track-meta"><span>22</span><h3>Contrato de marca</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><img src="assets/album/covers/alter-ego.jpeg" alt="Capa de Alter ego" loading="lazy" decoding="async"></div>
-        <div class="track-meta"><span>23</span><h3>Alter ego</h3></div>
-      </article>
-
-      <article class="track-card">
-        <div class="track-media"><div class="track-placeholder">24</div></div>
-        <div class="track-meta"><span>24</span><h3>Uma noite de rap</h3></div>
-      </article></div>
-</section>
-
-<section class="section" id="batalhas">
-  <div class="label">03 — BATALHAS</div>
-  <div class="section-head"><h2>20<br><em>FOLHINHAS.</em></h2></div>
-  <div class="battle-summary reveal"><a href="/batalhas/olimpo/"><strong>06</strong><span>Batalha do Olimpo</span><small>folhinhas</small></a><a href="/batalhas/sab/"><strong>03</strong><span>Batalha da SAB</span><small>folhinhas</small></a><a href="/batalhas/vem-viver/"><strong>03</strong><span>Batalha do Vem Viver</span><small>folhinhas</small></a><a href="/batalhas/vrg/"><strong>04</strong><span>Batalha da VRG</span><small>folhinhas</small></a><a href="/batalhas/chave/"><strong>01</strong><span>Batalha da Chave</span><small>folhinha</small></a><a href="/batalhas/morangao/"><strong>01</strong><span>Batalha do Morangão</span><small>folhinha</small></a></div>
-  
-    <article class="battle-detail" id="batalha-do-olimpo">
-      <div class="battle-detail-head">
-        <div class="battle-logo"><img src="assets/battles/logos/batalha-do-olimpo.jpeg" alt="Logo Batalha do Olimpo" loading="lazy" decoding="async"></div>
-        <div><span class="kicker">06 FOLHINHAS</span><h3>Batalha do Olimpo</h3></div>
-      </div>
-      <div class="battle-content">
-        <div><h4>Melhores rimas</h4><div class="video-grid"><article class="video-card">
-          <video controls preload="none" playsinline poster="assets/battles/logos/batalha-do-olimpo.jpeg">
-            <source src="assets/battles/videos/batalha-do-olimpo-melhores-rimas.mp4" type="video/mp4">
-            Seu navegador não suporta vídeo HTML5.
-          </video>
-          <h4>Batalha do Olimpo - Melhores rimas</h4>
-        </article>
-            <article class="video-card">
-              <video controls preload="none" playsinline poster="assets/battles/logos/batalha-do-olimpo.jpeg">
-                <source src="assets/battles/videos/batalha-da-vrg-lz-x-destaole.mp4" type="video/mp4">
-                Seu navegador não suporta vídeo HTML5.
-              </video>
-              <h4>Batalha do Olimpo - Lz x Destaole</h4>
-            </article></div></div>
-        <div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-olimpo-3x.jpeg" alt="Campeão Batalha do Olimpo 3x" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Olimpo 3x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-olimpo-2x.jpeg" alt="Campeão Batalha do Olimpo 2x" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Olimpo 2x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-olimpo-1x.jpeg" alt="Campeão Batalha do Olimpo 1x" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Olimpo 1x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-olimpo-4x.jpeg" alt="Campeão Batalha do Olimpo 4x" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Olimpo 4x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-olimpo-6x.jpg" alt="Lz campeão da Batalha do Olimpo em 17/08/2026" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Olimpo 5x</figcaption></figure></div></div>
-      </div>
-    </article>
-
-    <article class="battle-detail" id="batalha-da-sab">
-      <div class="battle-detail-head">
-        <div class="battle-logo"><img src="assets/battles/logos/batalha-da-sab.jpeg" alt="Logo Batalha da SAB" loading="lazy" decoding="async"></div>
-        <div><span class="kicker">03 FOLHINHAS</span><h3>Batalha da SAB</h3></div>
-      </div>
-      <div class="battle-content">
-        <div><h4>Melhores rimas</h4><div class="video-grid"><article class="video-card">
-          <video controls preload="none" playsinline poster="assets/battles/logos/batalha-da-sab.jpeg">
-            <source src="assets/battles/videos/batalha-da-sab-lz-e-jc-x-paike-e-teddy.mp4" type="video/mp4">
-            Seu navegador não suporta vídeo HTML5.
-          </video>
-          <h4>Batalha da SAB - LZ e JC x Paike e Teddy</h4>
-        </article><article class="video-card">
-          <video controls preload="none" playsinline poster="assets/battles/logos/batalha-da-sab.jpeg">
-            <source src="assets/battles/videos/batalha-da-sab-evento-consciencia-negra-show-do-djonga.mp4" type="video/mp4">
-            Seu navegador não suporta vídeo HTML5.
-          </video>
-          <h4>Batalha da SAB - Evento Consciência negra - Show do Djonga</h4>
-        </article></div></div>
-        <div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-da-sab-1x.jpeg" alt="Campeão Batalha da SAB 1x" loading="lazy" decoding="async"><figcaption>Campeão Batalha da SAB 1x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-da-sab-2x.jpeg" alt="Campeão Batalha da SAB 2x" loading="lazy" decoding="async"><figcaption>Campeão Batalha da SAB 2x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-da-sab-3x.jpeg" alt="Campeão Batalha da SAB 3x" loading="lazy" decoding="async"><figcaption>Campeão Batalha da SAB 3x</figcaption></figure></div></div>
-      </div>
-    </article>
-
-    <article class="battle-detail" id="batalha-do-vem-viver">
-      <div class="battle-detail-head">
-        <div class="battle-logo"><img src="assets/battles/logos/batalha-do-vem-viver.jpeg" alt="Logo Batalha do Vem Viver" loading="lazy" decoding="async"></div>
-        <div><span class="kicker">03 FOLHINHAS</span><h3>Batalha do Vem Viver</h3></div>
-      </div>
-      <div class="battle-content">
-        <div><h4>Melhores rimas</h4><div class="video-grid"><article class="video-card">
-          <video controls preload="none" playsinline poster="assets/battles/logos/batalha-do-vem-viver.jpeg">
-            <source src="assets/battles/videos/batalha-do-vem-viver-lz-x-g15.mp4" type="video/mp4">
-            Seu navegador não suporta vídeo HTML5.
-          </video>
-          <h4>Batalha do Vem Viver - Lz x G15</h4>
-        </article></div></div>
-        <div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-vem-viver-2x.jpeg" alt="Campeão Batalha do Vem Viver 2x" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Vem Viver 2x</figcaption></figure><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-vem-viver-1x.jpeg" alt="Campeão Batalha do Vem Viver 1x" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Vem Viver 1x</figcaption></figure></div></div>
-      </div>
-    </article>
-
-    <article class="battle-detail" id="batalha-da-vrg">
-      <div class="battle-detail-head">
-        <div class="battle-logo"><img src="assets/battles/logos/batalha-da-vrg.jpeg" alt="Logo Batalha da VRG" loading="lazy" decoding="async"></div>
-        <div><span class="kicker">04 FOLHINHAS</span><h3>Batalha da VRG</h3></div>
-      </div>
-
-      <div class="battle-content">
-        <div>
-          <h4>Melhores rimas</h4>
-          <div class="video-grid">
-            <article class="video-card">
-              <video controls preload="none" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
-                <source src="assets/battles/videos/batalha-da-vrg-lz-x-jimrunner.mp4" type="video/mp4">
-                Seu navegador não suporta vídeo HTML5.
-              </video>
-              <h4>Batalha da VRG - Lz x JimRunner</h4>
-            </article>
-
-            <article class="video-card">
-              <video controls preload="none" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
-                <source src="assets/battles/videos/batalha-da-vrg-melhores-rimas.mp4" type="video/mp4">
-                Seu navegador não suporta vídeo HTML5.
-              </video>
-              <h4>Batalha da VRG - Melhores rimas</h4>
-            </article>
-
-            <article class="video-card">
-              <video controls preload="none" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
-                <source src="assets/battles/videos/vrg-melhores-rimas-1.mp4" type="video/mp4">
-                Seu navegador não suporta vídeo HTML5.
-              </video>
-              <h4>Batalha da VRG - Melhores rimas</h4>
-            </article>
-
-            <article class="video-card">
-              <video controls preload="none" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
-                <source src="assets/battles/videos/vrg-melhores-rimas-2.mp4" type="video/mp4">
-                Seu navegador não suporta vídeo HTML5.
-              </video>
-              <h4>Batalha da VRG - Melhores rimas</h4>
-            </article>
-          
-            <article class="video-card">
-              <video controls preload="none" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
-                <source src="assets/battles/videos/batalha-da-vrg-melhores-rimas-3.mp4" type="video/mp4">
-                Seu navegador não suporta vídeo HTML5.
-              </video>
-              <h4>Batalha da VRG - Melhores rimas</h4>
-            </article>
-<article class="video-card">
-              <video controls preload="none" playsinline poster="assets/battles/logos/batalha-da-vrg.jpeg">
-                <source src="assets/battles/videos/batalha-da-vrg-campeao-27-09.mp4" type="video/mp4">
-                Seu navegador não suporta vídeo HTML5.
-              </video>
-              <h4>Batalha da VRG - Melhores rimas</h4>
-            </article>
+<div class="hero-copy">
+<div class="eyebrow">Bragança Paulista • MC • Artista</div>
+<h1>LZ</h1>
+<div class="hero-sub">Da batalha para o palco.<br/>Do palco para o MSMV.</div>
+<p class="hero-desc">Rap, improviso, composição e uma trajetória construída verso a verso. Este é o arquivo oficial da caminhada do Lz.</p>
+<div class="hero-actions"><a class="btn primary" href="#sobre">Conhecer o Lz</a><a class="btn" href="#msmv">Ver MSMV</a></div>
 </div>
-        
-            </div>
-
-        <div>
-          <h4>Registros de títulos</h4>
-          <div class="title-grid">
-            <figure class="title-shot">
-              <img src="assets/battles/titulos/campeao-batalha-da-vrg.jpeg" alt="Campeão Batalha da VRG" loading="lazy" decoding="async">
-              <figcaption>Campeão Batalha da VRG</figcaption>
-            </figure>
-            <figure class="title-shot">
-              <img src="assets/battles/titulos/campeao-batalha-da-vrg-2x.jpeg" alt="Campeão Batalha da VRG 2x" loading="lazy" decoding="async">
-              <figcaption>Campeão Batalha da VRG 2x</figcaption>
-            </figure>
-            <figure class="title-shot">
-              <img src="assets/battles/titulos/campeao-batalha-da-vrg-3x.jpg" alt="Campeão Batalha da VRG 4x" loading="lazy" decoding="async">
-              <figcaption>Campeão Batalha da VRG 4x</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <article class="battle-detail" id="batalha-da-chave">
-      <div class="battle-detail-head">
-        <div class="battle-logo"><img src="assets/battles/logos/batalha-da-chave.jpeg" alt="Logo Batalha da Chave" loading="lazy" decoding="async"></div>
-        <div><span class="kicker">01 FOLHINHA</span><h3>Batalha da Chave</h3></div>
-      </div>
-      <div class="battle-content">
-        <div><h4>Melhores rimas</h4><div class="video-grid"><p class="empty">Sem vídeo enviado para esta batalha.</p></div></div>
-        <div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-da-chave.jpeg" alt="Campeão Batalha da Chave" loading="lazy" decoding="async"><figcaption>Campeão Batalha da Chave</figcaption></figure></div></div>
-      </div>
-    </article>
-
-    <article class="battle-detail" id="batalha-do-morangao">
-      <div class="battle-detail-head">
-        <div class="battle-logo"><img src="assets/battles/logos/batalha-do-morangao.jpeg" alt="Logo Batalha do Morangão" loading="lazy" decoding="async"></div>
-        <div><span class="kicker">01 FOLHINHA</span><h3>Batalha do Morangão</h3></div>
-      </div>
-      <div class="battle-content">
-        <div><h4>Melhores rimas</h4><div class="video-grid"><p class="empty">Sem vídeo enviado para esta batalha.</p></div></div>
-        <div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img src="assets/battles/titulos/campeao-batalha-do-morangao.jpeg" alt="Campeão Batalha do Morangão" loading="lazy" decoding="async"><figcaption>Campeão Batalha do Morangão</figcaption></figure></div></div>
-      </div>
-    </article>
 </section>
-
-
+<section class="section" id="sobre">
+<div class="label">01 — APRESENTAÇÃO</div>
+<div class="section-head"><h2>QUEM É<br/><em>O LZ?</em></h2></div>
+<div class="about-grid reveal">
+<div class="about-copy">
+<p class="about-lead">Lz é um artista e MC de 18 anos, nascido e criado em Bragança Paulista, São Paulo.</p>
+<p>Carregando a vivência do interior paulista para o microfone, constrói uma identidade própria unindo a energia das ruas com uma escrita direta, ambição e personalidade.</p>
+<p>Nas batalhas de rima, desenvolveu improviso, agilidade mental, presença de palco e conexão com a cultura underground. No estúdio, essa experiência se transforma em composição e em um repertório que atravessa rap, trap e texturas melódicas.</p>
+<p>O projeto <b>MSMV — Me Subestimem Mais Vezes</b> funciona como manifesto: 24 faixas sobre vivências, superações, ambições e a realidade de quem constrói o próprio caminho na música independente.</p>
+</div>
+<div class="about-points">
+<div class="about-point"><b>Batalhas</b><p>Improviso, punchlines, versatilidade e presença diante do público.</p></div>
+<div class="about-point"><b>MSMV</b><p>24 faixas com o mesmo peso dentro da obra — nenhuma tratada como “a melhor”.</p></div>
+<div class="about-point"><b>Visão</b><p>Bragança Paulista no mapa, carreira construída no corre e evolução constante dentro e fora da roda.</p></div>
+</div>
+</div>
+<div class="stats reveal">
+<div class="stat"><b>21</b><span>títulos</span></div>
+<div class="stat"><b>24</b><span>faixas no MSMV</span></div>
+<div class="stat"><b>21</b><span>folhinhas</span></div>
+<div class="stat"><b>+7K</b><span>pessoas no show do Djonga</span></div>
+<div class="stat"><b>52</b><span>registros em 2026</span></div>
+</div>
+</section>
+<section class="section alt" id="msmv">
+<div class="label">02 — MSMV</div>
+<div class="section-head"><h2>ME SUBESTIMEM<br/><em>MAIS VEZES.</em></h2></div>
+<div class="flyer-grid reveal">
+<figure class="flyer-card"><img alt="Capa oficial do álbum MSMV" decoding="async" src="assets/album/flyers/msmv-capa-oficial.jpeg"/><figcaption>Capa oficial — MSMV</figcaption></figure>
+<figure class="flyer-card"><img alt="Flyer original com a lista de músicas do MSMV" decoding="async" src="assets/album/flyers/msmv-tracklist-24-faixas.jpg"/><figcaption>Flyer original / tracklist</figcaption></figure>
+</div>
+<div class="track-list reveal">
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">01</div></div>
+<div class="track-meta"><span>01</span><h3>Rico Demais</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">02</div></div>
+<div class="track-meta"><span>02</span><h3>Luta Diária</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">03</div></div>
+<div class="track-meta"><span>03</span><h3>Demorou pra acontecer</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><img alt="Capa de Camisa de Time" decoding="async" loading="lazy" src="assets/album/covers/camisa-de-time.jpeg"/></div>
+<div class="track-meta"><span>04</span><h3>Camisa de Time</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">05</div></div>
+<div class="track-meta"><span>05</span><h3>Sorte Jamais</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">06</div></div>
+<div class="track-meta"><span>06</span><h3>Me conhecem como Lz</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">07</div></div>
+<div class="track-meta"><span>07</span><h3>Obrigado Por Existir</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">08</div></div>
+<div class="track-meta"><span>08</span><h3>Reach Me</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">09</div></div>
+<div class="track-meta"><span>09</span><h3>Haters</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">10</div></div>
+<div class="track-meta"><span>10</span><h3>Rap</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><img alt="Capa de Mina gata" decoding="async" loading="lazy" src="assets/album/covers/mina-gata.jpeg"/></div>
+<div class="track-meta"><span>11</span><h3>Mina gata</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">12</div></div>
+<div class="track-meta"><span>12</span><h3>Transparência</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">13</div></div>
+<div class="track-meta"><span>13</span><h3>Certeza que é o mesmo?</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">14</div></div>
+<div class="track-meta"><span>14</span><h3>Escolhas</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">15</div></div>
+<div class="track-meta"><span>15</span><h3>Sentimentos</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">16</div></div>
+<div class="track-meta"><span>16</span><h3>Noite Cinzenta</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">17</div></div>
+<div class="track-meta"><span>17</span><h3>2008</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><img alt="Capa de Sonho Ingrato" decoding="async" loading="lazy" src="assets/album/covers/sonho-ingrato.jpeg"/></div>
+<div class="track-meta"><span>18</span><h3>Sonho Ingrato</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">19</div></div>
+<div class="track-meta"><span>19</span><h3>Morena Enloirada</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">20</div></div>
+<div class="track-meta"><span>20</span><h3>Projeto Trapstar</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">21</div></div>
+<div class="track-meta"><span>21</span><h3>Além da razão</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">22</div></div>
+<div class="track-meta"><span>22</span><h3>Contrato de marca</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><img alt="Capa de Alter ego" decoding="async" loading="lazy" src="assets/album/covers/alter-ego.jpeg"/></div>
+<div class="track-meta"><span>23</span><h3>Alter ego</h3></div>
+</article>
+<article class="track-card">
+<div class="track-media"><div class="track-placeholder">24</div></div>
+<div class="track-meta"><span>24</span><h3>Uma noite de rap</h3></div>
+</article></div>
+</section>
+<section class="section" id="batalhas">
+<div class="label">03 — BATALHAS</div>
+<div class="section-head"><h2>21<br/><em>FOLHINHAS.</em></h2></div>
+<div class="battle-summary reveal"><a href="/batalhas/olimpo/"><strong>06</strong><span>Batalha do Olimpo</span><small>folhinhas</small></a><a href="/batalhas/sab/"><strong>03</strong><span>Batalha da SAB</span><small>folhinhas</small></a><a href="/batalhas/vem-viver/"><strong>03</strong><span>Batalha do Vem Viver</span><small>folhinhas</small></a><a href="/batalhas/vrg/"><strong>05</strong><span>Batalha da VRG</span><small>folhinhas</small></a><a href="/batalhas/chave/"><strong>01</strong><span>Batalha da Chave</span><small>folhinha</small></a><a href="/batalhas/morangao/"><strong>01</strong><span>Batalha do Morangão</span><small>folhinha</small></a></div>
+<article class="battle-detail" id="batalha-do-olimpo">
+<div class="battle-detail-head">
+<div class="battle-logo"><img alt="Logo Batalha do Olimpo" decoding="async" loading="lazy" src="assets/battles/logos/batalha-do-olimpo.jpeg"/></div>
+<div><span class="kicker">06 FOLHINHAS</span><h3>Batalha do Olimpo</h3></div>
+</div>
+<div class="battle-content">
+<div><h4>Melhores rimas</h4><div class="video-grid"><article class="video-card">
+<video controls="" playsinline="" poster="assets/battles/logos/batalha-do-olimpo.jpeg" preload="none">
+<source src="assets/battles/videos/batalha-do-olimpo-melhores-rimas.mp4" type="video/mp4"/>
+            Seu navegador não suporta vídeo HTML5.
+          </video>
+<h4>Batalha do Olimpo - Melhores rimas</h4>
+</article>
+<article class="video-card">
+<video controls="" playsinline="" poster="assets/battles/logos/batalha-do-olimpo.jpeg" preload="none">
+<source src="assets/battles/videos/batalha-da-vrg-lz-x-destaole.mp4" type="video/mp4"/>
+                Seu navegador não suporta vídeo HTML5.
+              </video>
+<h4>Batalha do Olimpo - Lz x Destaole</h4>
+</article></div></div>
+<div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img alt="Campeão Batalha do Olimpo 3x" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-do-olimpo-3x.jpeg"/><figcaption>Campeão Batalha do Olimpo 3x</figcaption></figure><figure class="title-shot"><img alt="Campeão Batalha do Olimpo 2x" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-do-olimpo-2x.jpeg"/><figcaption>Campeão Batalha do Olimpo 2x</figcaption></figure><figure class="title-shot"><img alt="Campeão Batalha do Olimpo 1x" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-do-olimpo-1x.jpeg"/><figcaption>Campeão Batalha do Olimpo 1x</figcaption></figure><figure class="title-shot"><img alt="Campeão Batalha do Olimpo 4x" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-do-olimpo-4x.jpeg"/><figcaption>Campeão Batalha do Olimpo 4x</figcaption></figure><figure class="title-shot"><img alt="Lz campeão da Batalha do Olimpo em 17/08/2026" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-do-olimpo-6x.jpg"/><figcaption>Campeão Batalha do Olimpo 5x</figcaption></figure></div></div>
+</div>
+</article>
+<article class="battle-detail" id="batalha-da-sab">
+<div class="battle-detail-head">
+<div class="battle-logo"><img alt="Logo Batalha da SAB" decoding="async" loading="lazy" src="assets/battles/logos/batalha-da-sab.jpeg"/></div>
+<div><span class="kicker">03 FOLHINHAS</span><h3>Batalha da SAB</h3></div>
+</div>
+<div class="battle-content">
+<div><h4>Melhores rimas</h4><div class="video-grid"><article class="video-card">
+<video controls="" playsinline="" poster="assets/battles/logos/batalha-da-sab.jpeg" preload="none">
+<source src="assets/battles/videos/batalha-da-sab-lz-e-jc-x-paike-e-teddy.mp4" type="video/mp4"/>
+            Seu navegador não suporta vídeo HTML5.
+          </video>
+<h4>Batalha da SAB - LZ e JC x Paike e Teddy</h4>
+</article><article class="video-card">
+<video controls="" playsinline="" poster="assets/battles/logos/batalha-da-sab.jpeg" preload="none">
+<source src="assets/battles/videos/batalha-da-sab-evento-consciencia-negra-show-do-djonga.mp4" type="video/mp4"/>
+            Seu navegador não suporta vídeo HTML5.
+          </video>
+<h4>Batalha da SAB - Evento Consciência negra - Show do Djonga</h4>
+</article></div></div>
+<div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img alt="Campeão Batalha da SAB 1x" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-da-sab-1x.jpeg"/><figcaption>Campeão Batalha da SAB 1x</figcaption></figure><figure class="title-shot"><img alt="Campeão Batalha da SAB 2x" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-da-sab-2x.jpeg"/><figcaption>Campeão Batalha da SAB 2x</figcaption></figure><figure class="title-shot"><img alt="Campeão Batalha da SAB 3x" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-da-sab-3x.jpeg"/><figcaption>Campeão Batalha da SAB 3x</figcaption></figure></div></div>
+</div>
+</article>
+<article class="battle-detail" id="batalha-do-vem-viver">
+<div class="battle-detail-head">
+<div class="battle-logo"><img alt="Logo Batalha do Vem Viver" decoding="async" loading="lazy" src="assets/battles/logos/batalha-do-vem-viver.jpeg"/></div>
+<div><span class="kicker">03 FOLHINHAS</span><h3>Batalha do Vem Viver</h3></div>
+</div>
+<div class="battle-content">
+<div><h4>Melhores rimas</h4><div class="video-grid"><article class="video-card">
+<video controls="" playsinline="" poster="assets/battles/logos/batalha-do-vem-viver.jpeg" preload="none">
+<source src="assets/battles/videos/batalha-do-vem-viver-lz-x-g15.mp4" type="video/mp4"/>
+            Seu navegador não suporta vídeo HTML5.
+          </video>
+<h4>Batalha do Vem Viver - Lz x G15</h4>
+</article></div></div>
+<div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img alt="Campeão Batalha do Vem Viver 2x" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-do-vem-viver-2x.jpeg"/><figcaption>Campeão Batalha do Vem Viver 2x</figcaption></figure><figure class="title-shot"><img alt="Campeão Batalha do Vem Viver 1x" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-do-vem-viver-1x.jpeg"/><figcaption>Campeão Batalha do Vem Viver 1x</figcaption></figure></div></div>
+</div>
+</article>
+<article class="battle-detail" id="batalha-da-vrg">
+<div class="battle-detail-head">
+<div class="battle-logo"><img alt="Logo Batalha da VRG" decoding="async" loading="lazy" src="assets/battles/logos/batalha-da-vrg.jpeg"/></div>
+<div><span class="kicker">05 FOLHINHAS</span><h3>Batalha da VRG</h3></div>
+</div>
+<div class="battle-content">
+<div>
+<h4>Melhores rimas</h4>
+<div class="video-grid">
+<article class="video-card">
+<video controls="" playsinline="" poster="assets/battles/logos/batalha-da-vrg.jpeg" preload="none">
+<source src="assets/battles/videos/batalha-da-vrg-lz-x-jimrunner.mp4" type="video/mp4"/>
+                Seu navegador não suporta vídeo HTML5.
+              </video>
+<h4>Batalha da VRG - Lz x JimRunner</h4>
+</article>
+<article class="video-card">
+<video controls="" playsinline="" poster="assets/battles/logos/batalha-da-vrg.jpeg" preload="none">
+<source src="assets/battles/videos/batalha-da-vrg-melhores-rimas.mp4" type="video/mp4"/>
+                Seu navegador não suporta vídeo HTML5.
+              </video>
+<h4>Batalha da VRG - Melhores rimas</h4>
+</article>
+<article class="video-card">
+<video controls="" playsinline="" poster="assets/battles/logos/batalha-da-vrg.jpeg" preload="none">
+<source src="assets/battles/videos/vrg-melhores-rimas-1.mp4" type="video/mp4"/>
+                Seu navegador não suporta vídeo HTML5.
+              </video>
+<h4>Batalha da VRG - Melhores rimas</h4>
+</article>
+<article class="video-card">
+<video controls="" playsinline="" poster="assets/battles/logos/batalha-da-vrg.jpeg" preload="none">
+<source src="assets/battles/videos/vrg-melhores-rimas-2.mp4" type="video/mp4"/>
+                Seu navegador não suporta vídeo HTML5.
+              </video>
+<h4>Batalha da VRG - Melhores rimas</h4>
+</article>
+<article class="video-card">
+<video controls="" playsinline="" poster="assets/battles/logos/batalha-da-vrg.jpeg" preload="none">
+<source src="assets/battles/videos/batalha-da-vrg-melhores-rimas-3.mp4" type="video/mp4"/>
+                Seu navegador não suporta vídeo HTML5.
+              </video>
+<h4>Batalha da VRG - Melhores rimas</h4>
+</article>
+<article class="video-card">
+<video controls="" playsinline="" poster="assets/battles/logos/batalha-da-vrg.jpeg" preload="none">
+<source src="assets/battles/videos/batalha-da-vrg-campeao-27-09.mp4" type="video/mp4"/>
+                Seu navegador não suporta vídeo HTML5.
+              </video>
+<h4>Batalha da VRG - Melhores rimas</h4>
+</article>
+<article class="video-card"><video controls="" playsinline="" poster="assets/battles/logos/batalha-da-vrg.jpeg" preload="none"><source src="assets/battles/videos/vrg-melhores-rimas-novembro-1.mp4" type="video/mp4"/></video><h4>Batalha da VRG - Melhores rimas</h4></article><article class="video-card"><video controls="" playsinline="" poster="assets/battles/logos/batalha-da-vrg.jpeg" preload="none"><source src="assets/battles/videos/vrg-melhores-rimas-novembro-2.mp4" type="video/mp4"/></video><h4>Batalha da VRG - Melhores rimas</h4></article></div>
+</div>
+<div>
+<h4>Registros de títulos</h4>
+<div class="title-grid">
+<figure class="title-shot">
+<img alt="Campeão Batalha da VRG" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-da-vrg.jpeg"/>
+<figcaption>Campeão Batalha da VRG</figcaption>
+</figure>
+<figure class="title-shot">
+<img alt="Campeão Batalha da VRG 2x" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-da-vrg-2x.jpeg"/>
+<figcaption>Campeão Batalha da VRG 2x</figcaption>
+</figure>
+<figure class="title-shot">
+<img alt="Campeão Batalha da VRG 4x" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-da-vrg-3x.jpg"/>
+<figcaption>Campeão Batalha da VRG 4x</figcaption>
+</figure>
+<figure class="title-shot"><img alt="Batalha da VRG 5x" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-da-vrg-5x.jpeg"/><figcaption>Batalha da VRG 5x</figcaption></figure></div>
+</div>
+</div>
+</article>
+<article class="battle-detail" id="batalha-da-chave">
+<div class="battle-detail-head">
+<div class="battle-logo"><img alt="Logo Batalha da Chave" decoding="async" loading="lazy" src="assets/battles/logos/batalha-da-chave.jpeg"/></div>
+<div><span class="kicker">01 FOLHINHA</span><h3>Batalha da Chave</h3></div>
+</div>
+<div class="battle-content">
+<div><h4>Melhores rimas</h4><div class="video-grid"><p class="empty">Sem vídeo enviado para esta batalha.</p></div></div>
+<div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img alt="Campeão Batalha da Chave" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-da-chave.jpeg"/><figcaption>Campeão Batalha da Chave</figcaption></figure></div></div>
+</div>
+</article>
+<article class="battle-detail" id="batalha-do-morangao">
+<div class="battle-detail-head">
+<div class="battle-logo"><img alt="Logo Batalha do Morangão" decoding="async" loading="lazy" src="assets/battles/logos/batalha-do-morangao.jpeg"/></div>
+<div><span class="kicker">01 FOLHINHA</span><h3>Batalha do Morangão</h3></div>
+</div>
+<div class="battle-content">
+<div><h4>Melhores rimas</h4><div class="video-grid"><article class="video-card"><video controls="" playsinline="" poster="assets/battles/logos/batalha-do-morangao.jpeg" preload="none"><source src="assets/battles/videos/morangao-melhores-rimas-novembro-2026.mp4" type="video/mp4"/></video><h4>Batalha da Morangão - Melhores rimas</h4></article></div></div>
+<div><h4>Registros de títulos</h4><div class="title-grid"><figure class="title-shot"><img alt="Campeão Batalha do Morangão" decoding="async" loading="lazy" src="assets/battles/titulos/campeao-batalha-do-morangao.jpeg"/><figcaption>Campeão Batalha do Morangão</figcaption></figure></div></div>
+</div>
+</article>
+</section>
 <section class="section alt" id="trajetoria-batalhas">
-  <div class="label">04 — BATALHAS QUE LZ JÁ PARTICIPOU</div>
-  <div class="section-head">
-    <h2>POR ONDE<br><em>LZ JÁ PASSOU.</em></h2>
-    <p class="section-intro">As conquistas ficam em destaque acima; aqui está o histórico das batalhas registradas na caminhada.</p>
-  </div>
-  <div class="journey-stats reveal">
-    <div><b>12</b><span>batalhas</span></div>
-    <div><b>8</b><span>cidades</span></div>
-    <div><b>2</b><span>estados</span></div>
-  </div>
-  <div class="journey-grid reveal"><article class="journey-card champion">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-olimpo.jpeg" alt="Logo Batalha do Olimpo" loading="lazy" decoding="async"></div>
-      <small>CAMPEÃO 🏆</small>
-      <h3>Batalha do Olimpo</h3>
-      <p>📍 Bragança Paulista/SP</p>
-      <p>Semanalmente • Praça Jacinto Osório (Matadouro)</p>
-      <div class="journey-actions"><a class="primary-link" href="/batalhas/olimpo/">Ver informações →</a><a href="https://www.instagram.com/batalhado0limp0?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
-    </article><article class="journey-card champion">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-sab.jpeg" alt="Logo Batalha da SAB" loading="lazy" decoding="async"></div>
-      <small>CAMPEÃO 🏆</small>
-      <h3>Batalha da SAB</h3>
-      <p>📍 Extrema/MG</p>
-      <p>Quinzenal • Praça Coronel Simeão</p>
-      <div class="journey-actions"><a class="primary-link" href="/batalhas/sab/">Ver informações →</a><a href="https://www.instagram.com/batalhadasab?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
-    </article><article class="journey-card champion">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-vem-viver.jpeg" alt="Logo Batalha do Vem Viver" loading="lazy" decoding="async"></div>
-      <small>CAMPEÃO 🏆</small>
-      <h3>Batalha do Vem Viver</h3>
-      <p>📍 Bragança Paulista/SP</p>
-      <p>Mensalmente • Avenida dos Limoeiros (Parque do Vem Viver)</p>
-      <div class="journey-actions"><a class="primary-link" href="/batalhas/vem-viver/">Ver informações →</a><a href="https://www.instagram.com/batalhadovemviver?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
-    </article><article class="journey-card champion">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-vrg.jpeg" alt="Logo Batalha da VRG" loading="lazy" decoding="async"></div>
-      <small>CAMPEÃO 🏆</small>
-      <h3>Batalha da VRG</h3>
-      <p>📍 Vargem/SP</p>
-      <p>Semanalmente • Lago de Vargem</p>
-      <div class="journey-actions"><a class="primary-link" href="/batalhas/vrg/">Ver informações →</a><a href="https://www.instagram.com/bata_lhadavrg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
-    </article><article class="journey-card champion">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-chave.jpeg" alt="Logo Batalha da Chave" loading="lazy" decoding="async"></div>
-      <small>CAMPEÃO 🏆</small>
-      <h3>Batalha da Chave</h3>
-      <p>📍 Extrema/MG</p>
-      <p>Quinzenal • Parque de Eventos</p>
-      <div class="journey-actions"><a class="primary-link" href="/batalhas/chave/">Ver informações →</a><a href="https://www.instagram.com/batalha_da_chave?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
-    </article><article class="journey-card champion">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-morangao.jpeg" alt="Logo Batalha do Morangão" loading="lazy" decoding="async"></div>
-      <small>CAMPEÃO 🏆</small>
-      <h3>Batalha do Morangão</h3>
-      <p>📍 Águas de Lindóia/SP</p>
-      <p>Mensalmente • Pista de Skate da Popular</p>
-      <div class="journey-actions"><a class="primary-link" href="/batalhas/morangao/">Ver informações →</a><a href="https://www.instagram.com/batalhadamorangao?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
-    </article><article class="journey-card">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-parque.png" alt="Logo Batalha do Parque" loading="lazy" decoding="async"></div>
-      <small>PARTICIPAÇÃO</small>
-      <h3>Batalha do Parque</h3>
-      <p>📍 Bragança Paulista/SP</p>
-      <p>Mensalmente • Praça Narciso Pinheiro</p>
-      <div class="journey-actions"><a class="primary-link" href="/batalhas/parque/">Ver informações →</a><a href="https://www.instagram.com/batalha_do_parque_zn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
-    </article><article class="journey-card">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-home.png" alt="Logo Batalha da Home" loading="lazy" decoding="async"></div>
-      <small>PARTICIPAÇÃO</small>
-      <h3>Batalha da Home</h3>
-      <p>📍 Campinas/SP</p>
-      <p>Quinzenal • Praça João Da Cruz Prates</p>
-      <div class="journey-actions"><a class="primary-link" href="/batalhas/home/">Ver informações →</a><a href="https://www.instagram.com/batalhadahome?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
-    </article><article class="journey-card">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-coreto.png" alt="Logo Batalha do Coreto" loading="lazy" decoding="async"></div>
-      <small>PARTICIPAÇÃO</small>
-      <h3>Batalha do Coreto</h3>
-      <p>📍 Itapira/SP</p>
-      <p>Semanalmente • Coreto do Parque Juca Mulato</p>
-      <div class="journey-actions"><a class="primary-link" href="/batalhas/coreto/">Ver informações →</a><a href="https://www.instagram.com/bdcoreto019?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
-    </article><article class="journey-card">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-joker.png" alt="Logo Batalha da Joker" loading="lazy" decoding="async"></div>
-      <small>PARTICIPAÇÃO</small>
-      <h3>Batalha da Joker</h3>
-      <p>📍 Atibaia/SP</p>
-      <p>Quinzenal • CC / Lago do Major</p>
-      <div class="journey-actions"><a class="primary-link" href="/batalhas/joker/">Ver informações →</a><a href="https://www.instagram.com/bdj_011?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
-    </article><article class="journey-card">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-do-imperio.png" alt="Logo Batalha do Império" loading="lazy" decoding="async"></div>
-      <small>PARTICIPAÇÃO</small>
-      <h3>Batalha do Império</h3>
-      <p>📍 Atibaia/SP</p>
-      <p>Mensalmente • Jardim Imperial</p>
-      <div class="journey-actions"><a class="primary-link" href="/batalhas/imperio/">Ver informações →</a><a href="https://www.instagram.com/imperio.crew?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
-    </article><article class="journey-card">
-      <div class="journey-card-logo"><img src="assets/battles/logos/batalha-da-melodias.png" alt="Logo Batalha da Melodias" loading="lazy" decoding="async"></div>
-      <small>PARTICIPAÇÃO</small>
-      <h3>Batalha da Melodias</h3>
-      <p>📍 Bragança Paulista/SP</p>
-      <p>Mensalmente • Lago do Taboão</p>
-      <div class="journey-actions"><a class="primary-link" href="/batalhas/melodias/">Ver informações →</a><a href="https://www.instagram.com/batalha_da_melodias?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram ↗</a></div>
-    </article></div>
+<div class="label">04 — BATALHAS QUE LZ JÁ PARTICIPOU</div>
+<div class="section-head">
+<h2>POR ONDE<br/><em>LZ JÁ PASSOU.</em></h2>
+<p class="section-intro">As conquistas ficam em destaque acima; aqui está o histórico das batalhas registradas na caminhada.</p>
+</div>
+<div class="journey-stats reveal">
+<div><b>12</b><span>batalhas</span></div>
+<div><b>8</b><span>cidades</span></div>
+<div><b>2</b><span>estados</span></div>
+</div>
+<div class="journey-grid reveal"><article class="journey-card champion">
+<div class="journey-card-logo"><img alt="Logo Batalha do Olimpo" decoding="async" loading="lazy" src="assets/battles/logos/batalha-do-olimpo.jpeg"/></div>
+<small>CAMPEÃO 🏆</small>
+<h3>Batalha do Olimpo</h3>
+<p>📍 Bragança Paulista/SP</p>
+<p>Semanalmente • Praça Jacinto Osório (Matadouro)</p>
+<div class="journey-actions"><a class="primary-link" href="/batalhas/olimpo/">Ver informações →</a><a href="https://www.instagram.com/batalhado0limp0?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noopener" target="_blank">Instagram ↗</a></div>
+</article><article class="journey-card champion">
+<div class="journey-card-logo"><img alt="Logo Batalha da SAB" decoding="async" loading="lazy" src="assets/battles/logos/batalha-da-sab.jpeg"/></div>
+<small>CAMPEÃO 🏆</small>
+<h3>Batalha da SAB</h3>
+<p>📍 Extrema/MG</p>
+<p>Quinzenal • Praça Coronel Simeão</p>
+<div class="journey-actions"><a class="primary-link" href="/batalhas/sab/">Ver informações →</a><a href="https://www.instagram.com/batalhadasab?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noopener" target="_blank">Instagram ↗</a></div>
+</article><article class="journey-card champion">
+<div class="journey-card-logo"><img alt="Logo Batalha do Vem Viver" decoding="async" loading="lazy" src="assets/battles/logos/batalha-do-vem-viver.jpeg"/></div>
+<small>CAMPEÃO 🏆</small>
+<h3>Batalha do Vem Viver</h3>
+<p>📍 Bragança Paulista/SP</p>
+<p>Mensalmente • Avenida dos Limoeiros (Parque do Vem Viver)</p>
+<div class="journey-actions"><a class="primary-link" href="/batalhas/vem-viver/">Ver informações →</a><a href="https://www.instagram.com/batalhadovemviver?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noopener" target="_blank">Instagram ↗</a></div>
+</article><article class="journey-card champion">
+<div class="journey-card-logo"><img alt="Logo Batalha da VRG" decoding="async" loading="lazy" src="assets/battles/logos/batalha-da-vrg.jpeg"/></div>
+<small>CAMPEÃO 🏆</small>
+<h3>Batalha da VRG</h3>
+<p>📍 Vargem/SP</p>
+<p>Semanalmente • Lago de Vargem</p>
+<div class="journey-actions"><a class="primary-link" href="/batalhas/vrg/">Ver informações →</a><a href="https://www.instagram.com/bata_lhadavrg?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noopener" target="_blank">Instagram ↗</a></div>
+</article><article class="journey-card champion">
+<div class="journey-card-logo"><img alt="Logo Batalha da Chave" decoding="async" loading="lazy" src="assets/battles/logos/batalha-da-chave.jpeg"/></div>
+<small>CAMPEÃO 🏆</small>
+<h3>Batalha da Chave</h3>
+<p>📍 Extrema/MG</p>
+<p>Quinzenal • Parque de Eventos</p>
+<div class="journey-actions"><a class="primary-link" href="/batalhas/chave/">Ver informações →</a><a href="https://www.instagram.com/batalha_da_chave?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noopener" target="_blank">Instagram ↗</a></div>
+</article><article class="journey-card champion">
+<div class="journey-card-logo"><img alt="Logo Batalha do Morangão" decoding="async" loading="lazy" src="assets/battles/logos/batalha-do-morangao.jpeg"/></div>
+<small>CAMPEÃO 🏆</small>
+<h3>Batalha do Morangão</h3>
+<p>📍 Águas de Lindóia/SP</p>
+<p>Mensalmente • Pista de Skate da Popular</p>
+<div class="journey-actions"><a class="primary-link" href="/batalhas/morangao/">Ver informações →</a><a href="https://www.instagram.com/batalhadamorangao?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noopener" target="_blank">Instagram ↗</a></div>
+</article><article class="journey-card">
+<div class="journey-card-logo"><img alt="Logo Batalha do Parque" decoding="async" loading="lazy" src="assets/battles/logos/batalha-do-parque.png"/></div>
+<small>PARTICIPAÇÃO</small>
+<h3>Batalha do Parque</h3>
+<p>📍 Bragança Paulista/SP</p>
+<p>Mensalmente • Praça Narciso Pinheiro</p>
+<div class="journey-actions"><a class="primary-link" href="/batalhas/parque/">Ver informações →</a><a href="https://www.instagram.com/batalha_do_parque_zn?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noopener" target="_blank">Instagram ↗</a></div>
+</article><article class="journey-card">
+<div class="journey-card-logo"><img alt="Logo Batalha da Home" decoding="async" loading="lazy" src="assets/battles/logos/batalha-da-home.png"/></div>
+<small>PARTICIPAÇÃO</small>
+<h3>Batalha da Home</h3>
+<p>📍 Campinas/SP</p>
+<p>Quinzenal • Praça João Da Cruz Prates</p>
+<div class="journey-actions"><a class="primary-link" href="/batalhas/home/">Ver informações →</a><a href="https://www.instagram.com/batalhadahome?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noopener" target="_blank">Instagram ↗</a></div>
+</article><article class="journey-card">
+<div class="journey-card-logo"><img alt="Logo Batalha do Coreto" decoding="async" loading="lazy" src="assets/battles/logos/batalha-do-coreto.png"/></div>
+<small>PARTICIPAÇÃO</small>
+<h3>Batalha do Coreto</h3>
+<p>📍 Itapira/SP</p>
+<p>Semanalmente • Coreto do Parque Juca Mulato</p>
+<div class="journey-actions"><a class="primary-link" href="/batalhas/coreto/">Ver informações →</a><a href="https://www.instagram.com/bdcoreto019?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noopener" target="_blank">Instagram ↗</a></div>
+</article><article class="journey-card">
+<div class="journey-card-logo"><img alt="Logo Batalha da Joker" decoding="async" loading="lazy" src="assets/battles/logos/batalha-da-joker.png"/></div>
+<small>PARTICIPAÇÃO</small>
+<h3>Batalha da Joker</h3>
+<p>📍 Atibaia/SP</p>
+<p>Quinzenal • CC / Lago do Major</p>
+<div class="journey-actions"><a class="primary-link" href="/batalhas/joker/">Ver informações →</a><a href="https://www.instagram.com/bdj_011?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noopener" target="_blank">Instagram ↗</a></div>
+</article><article class="journey-card">
+<div class="journey-card-logo"><img alt="Logo Batalha do Império" decoding="async" loading="lazy" src="assets/battles/logos/batalha-do-imperio.png"/></div>
+<small>PARTICIPAÇÃO</small>
+<h3>Batalha do Império</h3>
+<p>📍 Atibaia/SP</p>
+<p>Mensalmente • Jardim Imperial</p>
+<div class="journey-actions"><a class="primary-link" href="/batalhas/imperio/">Ver informações →</a><a href="https://www.instagram.com/imperio.crew?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noopener" target="_blank">Instagram ↗</a></div>
+</article><article class="journey-card">
+<div class="journey-card-logo"><img alt="Logo Batalha da Melodias" decoding="async" loading="lazy" src="assets/battles/logos/batalha-da-melodias.png"/></div>
+<small>PARTICIPAÇÃO</small>
+<h3>Batalha da Melodias</h3>
+<p>📍 Bragança Paulista/SP</p>
+<p>Mensalmente • Lago do Taboão</p>
+<div class="journey-actions"><a class="primary-link" href="/batalhas/melodias/">Ver informações →</a><a href="https://www.instagram.com/batalha_da_melodias?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noopener" target="_blank">Instagram ↗</a></div>
+</article></div>
 </section>
-
 <section class="section alt" id="2026">
-  <div class="label">04 — TEMPORADA 2026</div>
-  <div class="section-head"><h2>BATALHAS<br><em>2026.</em></h2></div>
-  <div class="year-stats"><div class="year-stat"><b>46</b><span>registros em 2026</span></div></div>
-  <div class="months reveal"><section class="month-card"><h3>Janeiro</h3><div class="event-row champ">
-          <time>10/01</time>
-          <strong>Batalha do vem viver</strong>
-          <span>campeão 🏆</span>
-        </div>
-  <div class="event-row champ"><time>17/01</time><strong>Batalha do Vem Viver clandestina</strong><span>Campeão 🏆</span></div><div class="event-row ">
-          <time>24/01</time>
-          <strong>Batalha do parque dupla</strong>
-          <span>1º fase</span>
-        </div><div class="event-row ">
-          <time>25/01</time>
-          <strong>Batalha da VRG</strong>
-          <span>1º fase</span>
-        </div></section>
-<section class="month-card"><h3>Fevereiro</h3><div class="event-row ">
-          <time>10/02</time>
-          <strong>Batalha da home</strong>
-          <span>Final</span>
-        </div><div class="event-row ">
-          <time>13/02</time>
-          <strong>Batalha do Olimpo</strong>
-          <span>Semi</span>
-        </div><div class="event-row ">
-          <time>17/02</time>
-          <strong>Batalha do Olimpo</strong>
-          <span>Final</span>
-        </div><div class="event-row champ">
-          <time>17/02</time>
-          <strong>Batalha do Vem Viver</strong>
-          <span>Campeão 🏆</span>
-        </div><div class="event-row ">
-          <time>21/02</time>
-          <strong>Batalha da VRG dupla</strong>
-          <span>Semi</span>
-        </div><div class="event-row ">
-          <time>22/02</time>
-          <strong>Batalha do Coreto trio</strong>
-          <span>Final</span>
-        </div><div class="event-row champ">
-          <time>28/02</time>
-          <strong>Batalha Olimpo dupla</strong>
-          <span>Campeão 🏆</span>
-        </div></section>
-<section class="month-card"><h3>Março</h3><div class="event-row ">
-          <time>14/03</time>
-          <strong>Batalha do Olimpo</strong>
-          <span>Final</span>
-        </div><div class="event-row champ">
-          <time>21/03</time>
-          <strong>Batalha do Olimpo</strong>
-          <span>Campeão 🏆</span>
-        </div></section>
+<div class="label">04 — TEMPORADA 2026</div>
+<div class="section-head"><h2>BATALHAS<br/><em>2026.</em></h2></div>
+<div class="year-stats"><div class="year-stat"><b>52</b><span>registros em 2026</span></div></div>
+<div class="months reveal"><section class="month-card"><h3>Janeiro</h3><div class="event-row champ">
+<time>10/01</time>
+<strong>Batalha do vem viver</strong>
+<span>campeão 🏆</span>
+</div>
+<div class="event-row champ"><time>17/01</time><strong>Batalha do Vem Viver clandestina</strong><span>Campeão 🏆</span></div><div class="event-row">
+<time>24/01</time>
+<strong>Batalha do parque dupla</strong>
+<span>1º fase</span>
+</div><div class="event-row">
+<time>25/01</time>
+<strong>Batalha da VRG</strong>
+<span>1º fase</span>
+</div></section>
+<section class="month-card"><h3>Fevereiro</h3><div class="event-row">
+<time>10/02</time>
+<strong>Batalha da home</strong>
+<span>Final</span>
+</div><div class="event-row">
+<time>13/02</time>
+<strong>Batalha do Olimpo</strong>
+<span>Semi</span>
+</div><div class="event-row">
+<time>17/02</time>
+<strong>Batalha do Olimpo</strong>
+<span>Final</span>
+</div><div class="event-row champ">
+<time>17/02</time>
+<strong>Batalha do Vem Viver</strong>
+<span>Campeão 🏆</span>
+</div><div class="event-row">
+<time>21/02</time>
+<strong>Batalha da VRG dupla</strong>
+<span>Semi</span>
+</div><div class="event-row">
+<time>22/02</time>
+<strong>Batalha do Coreto trio</strong>
+<span>Final</span>
+</div><div class="event-row champ">
+<time>28/02</time>
+<strong>Batalha Olimpo dupla</strong>
+<span>Campeão 🏆</span>
+</div></section>
+<section class="month-card"><h3>Março</h3><div class="event-row">
+<time>14/03</time>
+<strong>Batalha do Olimpo</strong>
+<span>Final</span>
+</div><div class="event-row champ">
+<time>21/03</time>
+<strong>Batalha do Olimpo</strong>
+<span>Campeão 🏆</span>
+</div></section>
 <section class="month-card"><h3>Abril</h3><div class="event-row champ">
-          <time>04/04</time>
-          <strong>Batalha do Vem Viver</strong>
-          <span>Campeão 🏆</span>
-        </div><div class="event-row ">
-          <time>08/04</time>
-          <strong>Batalha do Olimpo</strong>
-          <span>Semifinal</span>
-        </div><div class="event-row ">
-          <time>11/04</time>
-          <strong>Batalha da SAB</strong>
-          <span>Final</span>
-        </div><div class="event-row ">
-          <time>18/04</time>
-          <strong>Batalha do Olimpo</strong>
-          <span>Semi</span>
-        </div></section>
+<time>04/04</time>
+<strong>Batalha do Vem Viver</strong>
+<span>Campeão 🏆</span>
+</div><div class="event-row">
+<time>08/04</time>
+<strong>Batalha do Olimpo</strong>
+<span>Semifinal</span>
+</div><div class="event-row">
+<time>11/04</time>
+<strong>Batalha da SAB</strong>
+<span>Final</span>
+</div><div class="event-row">
+<time>18/04</time>
+<strong>Batalha do Olimpo</strong>
+<span>Semi</span>
+</div></section>
 <section class="month-card"><h3>Maio</h3><div class="event-row champ">
-          <time>08/05</time>
-          <strong>Batalha da VRG</strong>
-          <span>Campeão 🏆</span>
-        </div><div class="event-row ">
-          <time>16/05</time>
-          <strong>Batalha da SAB</strong>
-          <span>2º fase</span>
-        </div><div class="event-row ">
-          <time>23/05</time>
-          <strong>Batalha da SAB</strong>
-          <span>2º fase</span>
-        </div><div class="event-row ">
-          <time>30/05</time>
-          <strong>Batalha do Olimpo</strong>
-          <span>Semifinal</span>
-        </div></section>
+<time>08/05</time>
+<strong>Batalha da VRG</strong>
+<span>Campeão 🏆</span>
+</div><div class="event-row">
+<time>16/05</time>
+<strong>Batalha da SAB</strong>
+<span>2º fase</span>
+</div><div class="event-row">
+<time>23/05</time>
+<strong>Batalha da SAB</strong>
+<span>2º fase</span>
+</div><div class="event-row">
+<time>30/05</time>
+<strong>Batalha do Olimpo</strong>
+<span>Semifinal</span>
+</div></section>
 <section class="month-card"><h3>Junho</h3><div class="event-row champ">
-          <time>11/06</time>
-          <strong>Batalha da SAB</strong>
-          <span>Campeão 🏆</span>
-        </div><div class="event-row ">
-          <time>25/06</time>
-          <strong>Batalha do Olimpo</strong>
-          <span>Final</span>
-        </div><div class="event-row ">
-          <time>27/06</time>
-          <strong>Batalha da SAB</strong>
-          <span>1º fase</span>
-        </div></section>
-<section class="month-card"><h3>Julho</h3><div class="event-row ">
-          <time>03/07</time>
-          <strong>Batalha da VRG</strong>
-          <span>Semifinal</span>
-        </div><div class="event-row ">
-          <time>09/07</time>
-          <strong>Batalha da Joker</strong>
-          <span>Semifinal</span>
-        </div><div class="event-row ">
-          <time>18/07</time>
-          <strong>Batalha da SAB</strong>
-          <span>1º fase</span>
-        </div><div class="event-row ">
-          <time>24/07</time>
-          <strong>Batalha da VRG</strong>
-          <span>Semifinal</span>
-        </div></section>
-
+<time>11/06</time>
+<strong>Batalha da SAB</strong>
+<span>Campeão 🏆</span>
+</div><div class="event-row">
+<time>25/06</time>
+<strong>Batalha do Olimpo</strong>
+<span>Final</span>
+</div><div class="event-row">
+<time>27/06</time>
+<strong>Batalha da SAB</strong>
+<span>1º fase</span>
+</div></section>
+<section class="month-card"><h3>Julho</h3><div class="event-row">
+<time>03/07</time>
+<strong>Batalha da VRG</strong>
+<span>Semifinal</span>
+</div><div class="event-row">
+<time>09/07</time>
+<strong>Batalha da Joker</strong>
+<span>Semifinal</span>
+</div><div class="event-row">
+<time>18/07</time>
+<strong>Batalha da SAB</strong>
+<span>1º fase</span>
+</div><div class="event-row">
+<time>24/07</time>
+<strong>Batalha da VRG</strong>
+<span>Semifinal</span>
+</div></section>
 <section class="month-card"><h3>Agosto</h3>
-  <div class="event-row ">
-    <time>01/08</time>
-    <strong>Batalha da SAB</strong>
-    <span>1ª fase</span>
-  </div>
-  <div class="event-row ">
-    <time>14/08</time>
-    <strong>Batalha da VRG</strong>
-    <span>Final</span>
-  </div>
-  <div class="event-row champ">
-    <time>17/08</time>
-    <strong>Batalha do Olimpo</strong>
-    <span>Campeão 🏆</span>
-  </div>
-  <div class="event-row"><time>19/08</time><strong>Batalha do Olimpo</strong><span>Semifinal</span></div>
-  <div class="event-row champ"><time>21/08</time><strong>Batalha da VRG</strong><span>Campeão 🏆</span></div>
+<div class="event-row">
+<time>01/08</time>
+<strong>Batalha da SAB</strong>
+<span>1ª fase</span>
+</div>
+<div class="event-row">
+<time>14/08</time>
+<strong>Batalha da VRG</strong>
+<span>Final</span>
+</div>
+<div class="event-row champ">
+<time>17/08</time>
+<strong>Batalha do Olimpo</strong>
+<span>Campeão 🏆</span>
+</div>
+<div class="event-row"><time>19/08</time><strong>Batalha do Olimpo</strong><span>Semifinal</span></div>
+<div class="event-row champ"><time>21/08</time><strong>Batalha da VRG</strong><span>Campeão 🏆</span></div>
 </section>
-
 <section class="month-card"><h3>Setembro</h3>
-  <div class="event-row"><time>02/09</time><strong>Batalha do Parque</strong><span>2º fase</span></div>
-  <div class="event-row"><time>03/09</time><strong>Batalha do Olimpo</strong><span>Semifinal</span></div>
-  <div class="event-row"><time>05/09</time><strong>Batalha do Forte</strong><span>Semifinal</span></div>
-  <div class="event-row"><time>11/09</time><strong>Batalha da VRG</strong><span>Final</span></div>
-  <div class="event-row"><time>12/09</time><strong>Pré-Regional do Olimpo</strong><span>2º fase</span></div>
-  <div class="event-row"><time>19/09</time><strong>Copa DiRaiz</strong><span>Semifinal</span></div>
-  <div class="event-row"><time>20/09</time><strong>Pré-Regional da SAB</strong><span>2º fase</span></div>
-  <div class="event-row"><time>25/09</time><strong>Batalha da SAB dupla</strong><span>Semifinal</span></div>
-  <div class="event-row"><time>26/09</time><strong>Aniversário Olimpo trio</strong><span>1ª fase</span></div>
-  <div class="event-row champ"><time>27/09</time><strong>Batalha da VRG</strong><span>Campeão 🏆</span></div>
-  <div class="event-row"><time>30/09</time><strong>Batalha da SAB</strong><span>2º fase</span></div>
+<div class="event-row"><time>02/09</time><strong>Batalha do Parque</strong><span>2º fase</span></div>
+<div class="event-row"><time>03/09</time><strong>Batalha do Olimpo</strong><span>Semifinal</span></div>
+<div class="event-row"><time>05/09</time><strong>Batalha do Forte</strong><span>Semifinal</span></div>
+<div class="event-row"><time>11/09</time><strong>Batalha da VRG</strong><span>Final</span></div>
+<div class="event-row"><time>12/09</time><strong>Pré-Regional do Olimpo</strong><span>2º fase</span></div>
+<div class="event-row"><time>19/09</time><strong>Copa DiRaiz</strong><span>Semifinal</span></div>
+<div class="event-row"><time>20/09</time><strong>Pré-Regional da SAB</strong><span>2º fase</span></div>
+<div class="event-row"><time>25/09</time><strong>Batalha da SAB dupla</strong><span>Semifinal</span></div>
+<div class="event-row"><time>26/09</time><strong>Aniversário Olimpo trio</strong><span>1ª fase</span></div>
+<div class="event-row champ"><time>27/09</time><strong>Batalha da VRG</strong><span>Campeão 🏆</span></div>
+<div class="event-row"><time>30/09</time><strong>Batalha da SAB</strong><span>2º fase</span></div>
 </section>
 <section class="month-card"><h3>Outubro</h3>
-  <div class="event-row"><time>02/10</time><strong>Batalha da VRG</strong><span>Semifinal</span></div>
-  <div class="event-row">
-    <time>07/10</time>
-    <strong>Batalha da SAB dupla</strong>
-    <span>1ª fase</span>
-  </div>
-
-</section>
+<div class="event-row"><time>02/10</time><strong>Batalha da VRG</strong><span>Semifinal</span></div>
+<div class="event-row">
+<time>07/10</time>
+<strong>Batalha da SAB dupla</strong>
+<span>1ª fase</span>
+</div>
+<div class="event-row"><time>14/10</time><strong>Batalha da SAB</strong><span>Semifinal</span></div><div class="event-row"><time>16/10</time><strong>Batalha da VRG trio</strong><span>Final</span></div><div class="event-row"><time>28/10</time><strong>Batalha da SAB</strong><span>2ª fase</span></div></section><section class="month-card"><h3>Novembro</h3><div class="event-row"><time>04/11</time><strong>Batalha da SAB</strong><span>1ª fase</span></div><div class="event-row"><time>08/11</time><strong>Batalha da Morangão trio</strong><span>1ª fase</span></div><div class="event-row champ"><time>13/11</time><strong>Batalha da VRG dupla</strong><span>Campeão 🏆</span></div></section>
 </div>
 </section>
-
-
-
 <section class="section" id="eventos">
-  <div class="label">06 — EVENTOS</div>
-  <div class="section-head"><h2>ALÉM<br><em>DAS BATALHAS.</em></h2><p class="section-intro">Apresentações que também fazem parte da trajetória do Lz.</p></div>
-
-  <article class="event-feature reveal">
-    <div>
-      <video controls preload="none" playsinline>
-        <source src="assets/battles/videos/batalha-da-sab-evento-consciencia-negra-show-do-djonga.mp4" type="video/mp4">
+<div class="label">06 — EVENTOS</div>
+<div class="section-head"><h2>ALÉM<br/><em>DAS BATALHAS.</em></h2><p class="section-intro">Apresentações que também fazem parte da trajetória do Lz.</p></div>
+<article class="event-feature reveal">
+<div>
+<video controls="" playsinline="" preload="none">
+<source src="assets/battles/videos/batalha-da-sab-evento-consciencia-negra-show-do-djonga.mp4" type="video/mp4"/>
         Seu navegador não suporta vídeo HTML5.
       </video>
-    </div>
-    <div>
-      <span class="event-badge">DESTAQUE • +7.000 PESSOAS</span>
-      <h3>ABERTURA DO SHOW DO DJONGA</h3>
-      <p>Apresentação durante o evento de Consciência Negra, para mais de 7 mil pessoas, na abertura do show do Djonga.</p>
-    </div>
-  </article>
-
-  <article class="event-secondary reveal">
-    <img src="assets/events/apresentacao-antimisoginia-sesi-012.jpeg" alt="Apresentação sobre antimisoginia no SESI-012 em Bragança Paulista" loading="lazy" decoding="async">
-    <div class="event-secondary-copy">
-      <span class="event-badge">APRESENTAÇÃO</span>
-      <h3>ANTIMISOGINIA NO SESI-012</h3>
-      <p>Apresentação realizada no SESI-012, em Bragança Paulista, contando com todos os alunos do Ensino Médio.</p>
-    </div>
-  </article>
+</div>
+<div>
+<span class="event-badge">DESTAQUE • +7.000 PESSOAS</span>
+<h3>ABERTURA DO SHOW DO DJONGA</h3>
+<p>Apresentação durante o evento de Consciência Negra, para mais de 7 mil pessoas, na abertura do show do Djonga.</p>
+</div>
+</article>
+<article class="event-secondary reveal">
+<img alt="Apresentação sobre antimisoginia no SESI-012 em Bragança Paulista" decoding="async" loading="lazy" src="assets/events/apresentacao-antimisoginia-sesi-012.jpeg"/>
+<div class="event-secondary-copy">
+<span class="event-badge">APRESENTAÇÃO</span>
+<h3>ANTIMISOGINIA NO SESI-012</h3>
+<p>Apresentação realizada no SESI-012, em Bragança Paulista, contando com todos os alunos do Ensino Médio.</p>
+</div>
+</article>
 </section>
-
-
 <section class="section alt" id="galeria">
-  <div class="label">06 — GALERIA</div>
-  <div class="section-head"><h2>LZ<br><em>NO PALCO.</em></h2></div>
-  <div class="gallery-grid reveal"><button class="gallery-item" data-src="assets/photos/lz-principal.jpg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-principal.jpg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button><button class="gallery-item" data-src="assets/photos/lz-palco-1.jpg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-palco-1.jpg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button><button class="gallery-item" data-src="assets/photos/lz-palco-2.jpg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-palco-2.jpg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button><button class="gallery-item" data-src="assets/photos/lz-batalha-1.jpeg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-batalha-1.jpeg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button><button class="gallery-item" data-src="assets/photos/lz-batalha-2.jpeg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-batalha-2.jpeg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button><button class="gallery-item" data-src="assets/photos/lz-batalha-3.jpeg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-batalha-3.jpeg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button><button class="gallery-item" data-src="assets/photos/lz-batalha-4.jpeg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-batalha-4.jpeg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button><button class="gallery-item" data-src="assets/photos/lz-batalha-5.jpeg" aria-label="Abrir foto do Lz"><img src="assets/photos/lz-batalha-5.jpeg" alt="Lz no palco e em batalhas" loading="lazy" decoding="async"></button></div>
+<div class="label">06 — GALERIA</div>
+<div class="section-head"><h2>LZ<br/><em>NO PALCO.</em></h2></div>
+<div class="gallery-grid reveal"><button aria-label="Abrir foto do Lz" class="gallery-item" data-src="assets/photos/lz-principal.jpg"><img alt="Lz no palco e em batalhas" decoding="async" loading="lazy" src="assets/photos/lz-principal.jpg"/></button><button aria-label="Abrir foto do Lz" class="gallery-item" data-src="assets/photos/lz-palco-1.jpg"><img alt="Lz no palco e em batalhas" decoding="async" loading="lazy" src="assets/photos/lz-palco-1.jpg"/></button><button aria-label="Abrir foto do Lz" class="gallery-item" data-src="assets/photos/lz-palco-2.jpg"><img alt="Lz no palco e em batalhas" decoding="async" loading="lazy" src="assets/photos/lz-palco-2.jpg"/></button><button aria-label="Abrir foto do Lz" class="gallery-item" data-src="assets/photos/lz-batalha-1.jpeg"><img alt="Lz no palco e em batalhas" decoding="async" loading="lazy" src="assets/photos/lz-batalha-1.jpeg"/></button><button aria-label="Abrir foto do Lz" class="gallery-item" data-src="assets/photos/lz-batalha-2.jpeg"><img alt="Lz no palco e em batalhas" decoding="async" loading="lazy" src="assets/photos/lz-batalha-2.jpeg"/></button><button aria-label="Abrir foto do Lz" class="gallery-item" data-src="assets/photos/lz-batalha-3.jpeg"><img alt="Lz no palco e em batalhas" decoding="async" loading="lazy" src="assets/photos/lz-batalha-3.jpeg"/></button><button aria-label="Abrir foto do Lz" class="gallery-item" data-src="assets/photos/lz-batalha-4.jpeg"><img alt="Lz no palco e em batalhas" decoding="async" loading="lazy" src="assets/photos/lz-batalha-4.jpeg"/></button><button aria-label="Abrir foto do Lz" class="gallery-item" data-src="assets/photos/lz-batalha-5.jpeg"><img alt="Lz no palco e em batalhas" decoding="async" loading="lazy" src="assets/photos/lz-batalha-5.jpeg"/></button><button aria-label="Abrir foto 1 do Lz no palco" class="gallery-item" data-src="assets/photos/lz-palco-novembro-1.jpeg"><img alt="Lz no palco - novembro, foto 1" decoding="async" loading="lazy" src="assets/photos/lz-palco-novembro-1.jpeg"/></button><button aria-label="Abrir foto 2 do Lz no palco" class="gallery-item" data-src="assets/photos/lz-palco-novembro-2.jpeg"><img alt="Lz no palco - novembro, foto 2" decoding="async" loading="lazy" src="assets/photos/lz-palco-novembro-2.jpeg"/></button><button aria-label="Abrir foto 3 do Lz no palco" class="gallery-item" data-src="assets/photos/lz-palco-novembro-3.jpeg"><img alt="Lz no palco - novembro, foto 3" decoding="async" loading="lazy" src="assets/photos/lz-palco-novembro-3.jpeg"/></button><button aria-label="Abrir foto 4 do Lz no palco" class="gallery-item" data-src="assets/photos/lz-palco-novembro-4.jpeg"><img alt="Lz no palco - novembro, foto 4" decoding="async" loading="lazy" src="assets/photos/lz-palco-novembro-4.jpeg"/></button></div>
 </section>
-
 <section class="section" id="contato">
-  <div class="label">07 — CONTATO</div>
-  <div class="section-head"><h2>FALE COM<br><em>O LZ.</em></h2><p class="section-intro">Shows, eventos, collabs, imprensa e contato profissional.</p></div>
-  
+<div class="label">07 — CONTATO</div>
+<div class="section-head"><h2>FALE COM<br/><em>O LZ.</em></h2><p class="section-intro">Shows, eventos, collabs, imprensa e contato profissional.</p></div>
 <div class="contact-grid reveal">
-    <a class="contact-link" href="https://www.instagram.com/lzzinnzx__?igsh=ZHUyNGx1dDhpd2x6&utm_source=qr" target="_blank" rel="noopener">
-      <small>INSTAGRAM</small><b>@Lzzinnzx__ ↗</b>
-    </a>
-    <a class="contact-link" href="https://www.tiktok.com/@lzzz.mc?_r=1&_t=ZS-98pUfRZHkO4" target="_blank" rel="noopener">
-      <small>TIKTOK</small><b>Lz Emici ↗</b>
-    </a>
-    <a class="contact-link" href="mailto:Lz.contato00@gmail.com">
-      <small>E-MAIL</small><b>Lz.contato00@gmail.com ↗</b>
-    </a>
-  </div>
+<a class="contact-link" href="https://www.instagram.com/lzzinnzx__?igsh=ZHUyNGx1dDhpd2x6&amp;utm_source=qr" rel="noopener" target="_blank">
+<small>INSTAGRAM</small><b>@Lzzinnzx__ ↗</b>
+</a>
+<a class="contact-link" href="https://www.tiktok.com/@lzzz.mc?_r=1&amp;_t=ZS-98pUfRZHkO4" rel="noopener" target="_blank">
+<small>TIKTOK</small><b>Lz Emici ↗</b>
+</a>
+<a class="contact-link" href="mailto:Lz.contato00@gmail.com">
+<small>E-MAIL</small><b>Lz.contato00@gmail.com ↗</b>
+</a>
+</div>
 </section>
-
 <section class="section alt" id="explorar">
-  <div class="label">07 — EXPLORAR</div>
-  <div class="section-head"><h2>CONHEÇA<br><em>O PROJETO.</em></h2></div>
-  <div class="contact-grid reveal">
-    <a class="contact-link" href="/sobre/"><small>BIOGRAFIA</small><b>Sobre o Lz ↗</b></a>
-    <a class="contact-link" href="/msmv/"><small>ÁLBUM</small><b>MSMV ↗</b></a>
-    <a class="contact-link" href="/batalhas/"><small>TRAJETÓRIA</small><b>Batalhas ↗</b></a>
-  </div>
+<div class="label">07 — EXPLORAR</div>
+<div class="section-head"><h2>CONHEÇA<br/><em>O PROJETO.</em></h2></div>
+<div class="contact-grid reveal">
+<a class="contact-link" href="/sobre/"><small>BIOGRAFIA</small><b>Sobre o Lz ↗</b></a>
+<a class="contact-link" href="/msmv/"><small>ÁLBUM</small><b>MSMV ↗</b></a>
+<a class="contact-link" href="/batalhas/"><small>TRAJETÓRIA</small><b>Batalhas ↗</b></a>
+</div>
 </section>
-
 </main>
-
 <footer><span>© 2026 LZ — SITE OFICIAL</span><span>MSMV • BATALHAS • BRAGANÇA PAULISTA</span></footer>
-<a class="top-btn" id="topBtn" href="#inicio" aria-label="Voltar ao topo">↑</a>
-<div class="lightbox" id="lightbox"><button id="lightboxClose" aria-label="Fechar">×</button><img id="lightboxImg" alt="Foto ampliada do Lz" decoding="async"></div>
-
+<a aria-label="Voltar ao topo" class="top-btn" href="#inicio" id="topBtn">↑</a>
+<div class="lightbox" id="lightbox"><button aria-label="Fechar" id="lightboxClose">×</button><img alt="Foto ampliada do Lz" decoding="async" id="lightboxImg"/></div>
 <script>
 const menuBtn=document.getElementById('menuBtn'), mobileNav=document.getElementById('mobileNav');
 menuBtn.addEventListener('click',()=>mobileNav.classList.toggle('open'));
@@ -987,7 +932,6 @@ document.querySelectorAll('.gallery-item').forEach(btn=>btn.addEventListener('cl
 function closeLb(){lb.classList.remove('open');document.body.style.overflow='';lbImg.src=''}
 document.getElementById('lightboxClose').addEventListener('click',closeLb);lb.addEventListener('click',e=>{if(e.target===lb)closeLb()});addEventListener('keydown',e=>{if(e.key==='Escape')closeLb()});
 </script>
-
 <script id="lz-mobile-performance">
 (function(){
   const isMobile = () => window.matchMedia('(max-width:780px)').matches;
@@ -1048,5 +992,4 @@ document.getElementById('lightboxClose').addEventListener('click',closeLb);lb.ad
   }
 })();
 </script>
-
 </body></html>
